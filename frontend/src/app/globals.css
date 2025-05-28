@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background:#FAFAFA;
+  --foreground: #171717;
+}
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Urbanist", sans-serif;
+  overflow-x: hidden;
+}
+
+.rectangle{
+  animation: rectangle-spin infinite 20s linear;
+}
+
+@keyframes rectangle-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.gradient-background {
+  background: linear-gradient(270deg, #2478d8f6, #3b34f09c, #05c5f5ec);
+  background-size: 600% 600%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+.clip-left {
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+}
+
+.clip-segment {
+  clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+}
