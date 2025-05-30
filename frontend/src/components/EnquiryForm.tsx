@@ -91,15 +91,15 @@ export default function EnquiryForm() {
   };
 
   return (
-    <div className="flex items-center justify-center p-4 relative z-20">
+    <div className="flex items-center justify-center md:p-4 relative z-20">
       <div className="relative w-full max-w-md">
-        <div className="backdrop-blur-lg bg-white/10 border border-gray-600 rounded-3xl ">
+        <div className="backdrop-blur-lg bg-white/10 border border-gray-600 rounded md:rounded-3xl ">
           <div className="text-center mb-2">
-            <h2 className="text-2xl font-bold text-white mb-2 bg-[#155E95]  rounded-t-3xl p-4">
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-2 bg-[#155E95]  md:rounded-t-3xl p-4">
               Book A<span> Demo</span>
             </h2>
           </div>
-<div className='p-6'>
+<div className='p-2 md:p-6'>
      <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
            
             <div className="flex flex-wrap gap-2 w-full ml-1">
@@ -126,7 +126,7 @@ export default function EnquiryForm() {
                 onChange={handleChange}
                 placeholder="Full Name"
                 required
-                className="w-full pl-12 pr-4 py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black"
+                className="w-full pl-12 pr-4 py-2 md:py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black"
               />
             </div>
 
@@ -142,7 +142,7 @@ export default function EnquiryForm() {
                 onChange={handleChange}
                 placeholder="Company Name"
                 required
-                className="w-full pl-12 pr-4 py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black"
+                className="w-full pl-12 pr-4 py-2 md:py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black"
               />
             </div>
 
@@ -157,7 +157,7 @@ export default function EnquiryForm() {
                 onChange={handleChange}
                 placeholder="Email Address"
                 required
-                className={`w-full pl-12 pr-4 py-4 bg-white/10 border ${
+                className={`w-full pl-12 pr-4 py-2 md:py-4 bg-white/10 border ${
                   emailError ? 'border-gray-800' : 'border-gray-600'
                 } rounded text-black placeholder-black`}
               />
@@ -177,7 +177,7 @@ export default function EnquiryForm() {
                 onChange={handleChange}
                 placeholder="Phone Number"
                 required
-                className="w-full pl-12 pr-4 py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black"
+                className="w-full pl-12 pr-4 py-2 md:py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black"
               />
             </div>
 
@@ -193,7 +193,7 @@ export default function EnquiryForm() {
                 onChange={handleChange}
                 placeholder="Location"
                 required
-                className="w-full pl-12 pr-4 py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black"
+                className="w-full pl-12 pr-4 py-2 md:py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black"
               />
             </div>
 
@@ -209,7 +209,7 @@ export default function EnquiryForm() {
                 onChange={handleChange}
                 placeholder="Your Query"
                 rows={4}
-                className="w-full pl-12 pr-4 py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black resize-none"
+                className="w-full pl-12 pr-4 py-2 md:py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black resize-none"
               />
             </div>
 
@@ -217,7 +217,7 @@ export default function EnquiryForm() {
             <button
               type="submit"
               disabled={isSubmitted}
-              className="w-full bg-[#155E95] text-white font-semibold py-4 px-6 rounded hover:bg-green-600 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-[#155E95] text-white font-semibold py-2 md:py-4 px-6 rounded hover:bg-green-600 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitted ? (
                 <>

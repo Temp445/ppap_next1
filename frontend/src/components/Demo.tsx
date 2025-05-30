@@ -3,9 +3,9 @@ import { MoveRight } from 'lucide-react';
 
 const Demo = () => {
   return (
-    <section className="bg-[#155E95] py-20">
+    <section className="bg-[#155E95] py-10 md:py-20">
       <div className="container mx-auto px-4 text-center">
-        <h1 className="text-3xl md:text-4xl text-white font-bold max-w-3xl mx-auto">
+        <h1 className="text-xl md:text-4xl text-white font-bold max-w-3xl mx-auto">
           Learn how to simplify your Production Part Approval Process
         </h1>
         <div className="mt-8 flex justify-center">

@@ -22,7 +22,7 @@ const Navbar: FC = () => {
 
   return (
     <>
-      <nav className="flex items-center justify-between md:pt-5 lg:pb-10 px-4 md:px-0 lg:px-6 relative">
+      <nav className="flex items-center justify-between md:pt-5 lg:pb-10 px-4 md:px-0 xl:px-6 relative">
         <div className="md:flex items-center hidden ">
           <Link href="/" className="text-2xl md:text-xl lg:text-2xl xl:text-3xl font-bold text-white flex gap-1">
             <Image
@@ -89,7 +89,7 @@ const Navbar: FC = () => {
                <Link
                 href="/"
                 onClick={() => setIsMenuOpen(false)}
-                className="flex items-center text-white hover:text-orange-600 text-base font-semibold"
+                className="flex items-center text-[#102E50] text-base font-semibold"
               >
                 <House className="w-4 h-4 mr-2" />
                 Home
@@ -97,7 +97,7 @@ const Navbar: FC = () => {
               <Link
                 href="#features"
                 onClick={() => setIsMenuOpen(false)}
-                className="flex items-center text-white hover:text-orange-600 text-base font-semibold"
+                className="flex items-center text-[#102E50] text-base font-semibold"
               >
                 <Star className="w-4 h-4 mr-2" />
                 Feature
@@ -106,7 +106,7 @@ const Navbar: FC = () => {
               <Link
                 href="#pricing"
                 onClick={() => setIsMenuOpen(false)}
-                className="flex items-center text-white hover:text-orange-600 text-base font-semibold"
+                className="flex items-center text-[#102E50]  text-base font-semibold"
               >
                 <DollarSign className="w-4 h-4 mr-2" />
                 Pricing
@@ -115,7 +115,7 @@ const Navbar: FC = () => {
               <Link
                 href="#contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="flex items-center text-white hover:text-orange-600 text-base font-semibold"
+                className="flex items-center text-[#102E50]  text-base font-semibold"
               >
                 <FileText className="w-4 h-4 mr-2" />
                 Contact Us
@@ -124,7 +124,7 @@ const Navbar: FC = () => {
               <Link
                 href="#client"
                 onClick={() => setIsMenuOpen(false)}
-                className="flex items-center text-white hover:text-orange-600 text-base font-semibold"
+                className="flex items-center text-[#102E50]  text-base font-semibold"
               >
                 <Users className="w-4 h-4 mr-2" />
                 Clients
@@ -136,7 +136,7 @@ const Navbar: FC = () => {
         <div className="hidden md:flex items-center space-x-4">
           <Link
             href="https://webapp.acecms.in/"
-            className="bg-green-700 text-white px-4 py-1 md:px-2 lg:px-6 xl:py-2 rounded-md font-medium hover:opacity-90 transition"
+            className="hover:bg-green-700 hover hover:border-green-700 border text-white px-4 py-1 md:px-2 lg:px-6 xl:py-2 rounded-md font-medium hover:opacity-90 transition"
           >
             Sign In
           </Link>
@@ -163,7 +163,7 @@ const Navbar: FC = () => {
         </Link>
 
         <Link
-          href="/BookDemo"
+          href="#contact"
           className="flex flex-col items-center justify-center text-gray-600"
         >
           <div className="w-12 h-12  bg-gradient-to-r from-blue-500 to-blue-400 flex items-center justify-center">
