@@ -99,7 +99,7 @@ export default function EnquiryForm() {
               Book A<span> Demo</span>
             </h2>
           </div>
-<div className='p-2 md:p-6'>
+     <div className='p-2 md:p-6'>
      <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
            
             <div className="flex flex-wrap gap-2 w-full ml-1">

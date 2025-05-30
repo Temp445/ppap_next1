@@ -47,7 +47,7 @@ const Clients: React.FC = () => {
   const secondHalf = logos.slice(half);
 
   return (
-    <div className="  md:mt-10  z-0 " id="client">
+    <div className="mt-10  z-0 " id="client">
         <h1 className="text-center text-2xl md:text-4xl font-bold md:mb-5  text-[#102E50]">
        Trusted by Leading Clients
       </h1>

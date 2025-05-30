@@ -12,10 +12,10 @@ const Why_Choose = () => {
  
 
   return (
-    <section className="pt-16 container mx-auto ">
+    <section className="md:pt-16 container mx-auto ">
       <div className=" mx-auto px-2 md:px-4">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-0 xl:gap-16 container">
-          <div className="w-full md:w-8/12 lg:w-10/12  xl:w-6/12 relative">
+          <div className="w-full md:w-8/12 lg:w-10/12  xl:w-6/12 relative order-2 md:order-1">
             <div className='z-20'>
               <EnquiryForm/>
             </div>
@@ -24,7 +24,7 @@ const Why_Choose = () => {
           </div>
           
         
-          <div className="w-full xl:w-11/12 space-y-6   pt-5 pb-10 px-2 lg:px-12 xl:px-2 rounded">
+          <div className="w-full xl:w-11/12 space-y-6   pt-5 pb-10 px-2 lg:px-12 xl:px-2 rounded order-1 md:order-2">
             <div className="inline-block  text-[#102E50] text-xl md:text-3xl rounded-full font-bold">
               Why Choose <span className='text-orange-600'>ACE PPAP</span> ?
             </div>
