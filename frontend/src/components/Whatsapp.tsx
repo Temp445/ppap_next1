@@ -28,7 +28,7 @@ interface FormData {
   queries: string;
 }
 
-export default function EnquiryForm() {
+export default function WhatsApp() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     company: '',
@@ -66,7 +66,7 @@ export default function EnquiryForm() {
       to: adminPhone,
       type: "template",
       template: {
-        name: "enquiry_ace_ppap",
+        name: "enquiry_ace_cms",
         language: {
           policy: "deterministic",
           code: "en"

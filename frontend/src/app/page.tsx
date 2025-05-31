@@ -2,7 +2,7 @@
 import BackToTop from '@/components/BackToTop'
 import Clients from '@/components/Clients'
 import Footer from '@/components/Footer'
-import Form from '@/components/Form'
+import Contact from '@/components/Contact'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import PricingTable from '@/components/PricingTable'
@@ -12,6 +12,7 @@ import PPAP from '@/components/ppap'
 import Feature from '@/components/Feature'
 import Advantage from '@/components/Advantage'
 import Demo from '@/components/Demo'
+import Whatsapp from '@/components/Whatsapp'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
     <div className='container mx-auto absolute md:hidden'><Navbar/></div>
     <Hero/>
     <PPAP/>
+    <Whatsapp/>
     <Why_Choose/>
     <Clients/>
     <Advantage/>
@@ -26,7 +28,7 @@ const Home = () => {
     <Demo/>
     <PricingTable/>
     <Testimonial/>
-    <Form/>
+    <Contact/>
     <Footer/>
     <BackToTop/>
     </div>

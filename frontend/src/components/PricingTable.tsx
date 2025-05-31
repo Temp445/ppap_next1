@@ -182,8 +182,9 @@ const PricingTable: React.FC = () => {
                   <div className="mb-6 mt-6 md:hidden">
                     <h3 className="font-semibold text-gray-900 mb-4">Key features:</h3>
                     <ul className="space-y-1 text-gray-700">
-                      <li className="flex gap-3"><span className="text-green-600">✓</span>Fully customizable to your needs.</li>
-                      <li className="flex gap-3"><span className="text-green-600">✓</span>Contact our sales team for custom solutions.</li>
+                    <li className="flex gap-3"><span className="text-green-600">✓</span>Offers Pro features along with customization options</li>
+                    <li className="flex gap-3"><span className="text-green-600">✓</span>Customizable to your exact needs</li>
+                    <li className="flex gap-3"><span className="text-green-600">✓</span>Reach out for a solution built around your needs</li>
                     </ul>
                   </div>
                 )}
