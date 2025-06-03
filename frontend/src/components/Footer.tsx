@@ -13,8 +13,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between md:justify-around space-y-8 md:space-y-0">
 
           <div className='w-80'>
-            <div className="text-lg font-semibold text-white flex gap-2"> <Image src={logo} alt="logo" width={100} height={100} className='w-6 h-6' /> ACE CMS</div>
-            <p className="mt-2 text-sm flex flex-wrap">ACE CMS brings efficiency, traceability, and compliance to calibration management. By leveraging automation, real-time data, and cloud flexibility, it transforms a traditionally manual and error-prone process into a streamlined, audit-ready system—saving time, reducing risk, and ensuring quality.</p>
+            <div className="text-lg font-semibold text-white flex gap-2"> <Image src={logo} alt="logo" width={100} height={100} className='w-6 h-6' /> ACE PPAP</div>
+            <p className="mt-2 text-sm flex flex-wrap">Ace PPAP streamlines your PPAP process with centralized, up-to-date documents, built-in compliance, and improved team accountability helping you save time and get faster approvals.</p>
           </div>
 
         <div className='flex gap-14 xl:gap-28'>

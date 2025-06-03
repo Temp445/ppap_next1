@@ -2,33 +2,20 @@
 
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
-import icon1 from '../assets/ClientImages/image-15.png'
-import icon2 from '../assets/ClientImages/image-5.png'
-import icon3 from '../assets/ClientImages/image-1.png'
-import Image from 'next/image';
 
 const testimonials = [
   {
     id: 1,
-    logo:icon1,
-    name: 'Praveena',
-    company: 'Asahi India Glass Ltd',
-    quote: 'Our company values the precision and reliability of this calibration system, which is essential to maintaining our quality standards.',
+    quote: 'PPAP always seemed complicated to me, but this service simplified everything. I felt confident submitting the documents knowing they were checked and complete.',
   },
   {
     id: 2,
-    logo:icon2,
-    name: 'Arun',
-    company: 'Wonjin Autoparts India Pvt Ltd',
-    quote: 'Implementing this system has substantially reduced the time and errors associated with our calibration procedures, contributing to smoother daily operations.',
+    quote: 'This was my first time handling a PPAP submission, and I was lost at first. The guidance and templates provided made the whole process straightforward and stress-free.',
   },
   {
     id: 3,
-    logo:icon3,
-    name: 'Praveen',
-    company: 'RANE TRW STEERING SYSTEMS Pvt Ltd',
-    quote: 'Since implementing this solution, our calibration workflows have become markedly more efficient. The system’s reliability and ease of use have exceeded our expectations.',
-  }
+    quote: 'The team demonstrated thorough expertise and guided us seamlessly through every stage of the PPAP requirements, ensuring compliance and accuracy.',
+  },
 ];
 
 export default function TestimonialCarousel() {
@@ -53,14 +40,12 @@ export default function TestimonialCarousel() {
     return () => clearInterval(interval);
   }, [isHovered]);
 
-  const { name, company, quote, logo } = testimonials[currentTestimonial];
+  const { quote } = testimonials[currentTestimonial];
 
   return (
-    <div
-      className='bg-[#155E95] py-10 mt-10 px-2 md:px-10'
-    >
-      <h1 className='text-center text-2xl md:text-3xl font-bold pb-5 text-white'>
-        Authentic Customer Feedback
+    <div className='bg-[#155E95] py-10 mt-10 px-2 md:px-10'>
+      <h1 className='text-center text-xl md:text-3xl font-bold pb-5 text-white'>
+        Customer Feedback on <br  className='md:hidden'/> Our PPAP Services
       </h1>
 
       <div
@@ -87,14 +72,6 @@ export default function TestimonialCarousel() {
             <p className="text-sm md:text-lg lg:text-xl text-gray-700 mb-4 px-1 md:px-5">
               &quot; {quote} &quot;
             </p>
-            <div>
-              <h3 className="text-base md:text-xl font-semibold text-gray-800">{name}</h3>
-             <p className="text-gray-500 text-xs md:text-base flex items-center gap-3 mx-auto justify-center">
-    <span className="shrink-0">
-      <Image src={logo} alt="Logo" width={80} height={80} className="rounded-md object-contain w-12 h-12 md:w-20 md:h-20" />
-    </span> {company} </p>
-
-            </div>
           </div>
         </div>
 

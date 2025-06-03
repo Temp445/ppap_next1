@@ -132,7 +132,7 @@ const Hero = () => {
                 <div className="md:pt-4 flex gap-5 mx-auto justify-evenly md:justify-center lg:justify-start">
                   <Link
                     href="#contact"
-                    className="group inline-flex items-center gap-3 px-4  hover:bg-orange-600  border hover:border-orange-600 text-white text-sm md:text-lg font-bold rounded  shadow-xl hover:shadow-2xl"
+                    className="group inline-flex items-center gap-3 px-4  py-2 md:py-3  hover:bg-orange-600  border hover:border-orange-600 text-white text-sm md:text-lg font-bold rounded  shadow-xl hover:shadow-2xl"
                   >
                     <span>Book a Demo</span>
                     <svg
@@ -151,7 +151,7 @@ const Hero = () => {
                   </Link>
 
                   <div>
-                    <DemoButton />
+                    {/* <DemoButton /> */}
                   </div>
                 </div>
               </div>

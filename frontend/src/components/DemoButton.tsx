@@ -48,7 +48,7 @@ export default function DemoButton() {
               <div className="rounded-lg overflow-hidden shadow-2xl h-full">
                 <iframe
                   className="w-full h-full rounded-lg"
-                  src="#"
+                  src=""
                   title="Demo Video"
                   frameBorder="0"
                   allow="autoplay; encrypted-media"
