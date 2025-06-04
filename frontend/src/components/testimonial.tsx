@@ -6,14 +6,17 @@ import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
+    name: 'Karthik',
     quote: 'PPAP always seemed complicated to me, but this service simplified everything. I felt confident submitting the documents knowing they were checked and complete.',
   },
   {
     id: 2,
+    name: 'Priya',
     quote: 'This was my first time handling a PPAP submission, and I was lost at first. The guidance and templates provided made the whole process straightforward and stress-free.',
   },
   {
     id: 3,
+    name: 'Rajesh Kumar',
     quote: 'The team demonstrated thorough expertise and guided us seamlessly through every stage of the PPAP requirements, ensuring compliance and accuracy.',
   },
 ];
@@ -40,7 +43,7 @@ export default function TestimonialCarousel() {
     return () => clearInterval(interval);
   }, [isHovered]);
 
-  const { quote } = testimonials[currentTestimonial];
+  const { name,quote } = testimonials[currentTestimonial];
 
   return (
     <div className='bg-[#155E95] py-10 mt-10 px-2 md:px-10'>
@@ -72,7 +75,10 @@ export default function TestimonialCarousel() {
             <p className="text-sm md:text-lg lg:text-xl text-gray-700 mb-4 px-1 md:px-5">
               &quot; {quote} &quot;
             </p>
+          <h3 className="text-base md:text-xl font-semibold text-gray-900">{name}</h3>
+
           </div>
+
         </div>
 
         <div className="flex justify-center md:mt-4">
