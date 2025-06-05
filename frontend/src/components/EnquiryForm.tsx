@@ -55,7 +55,15 @@ export default function EnquiryForm() {
     setEmailError(validateEmail(value));
   };
 
-  const sendWhatsAppNotification = async (formData: any) => {
+  const sendWhatsAppNotification = async (formData: {
+    name: string;
+    company: string;
+    email: string;
+    number: string;
+    location: string;
+    queries: string;
+    product: string;
+  }) => {
     if (!stromxToken || !adminPhones?.length) return;
     const messagePayload = {
       type: 'template',

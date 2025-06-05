@@ -150,8 +150,8 @@ const Hero = () => {
                     </svg>
                   </Link>
 
-                  <div>
-                    {/* <DemoButton /> */}
+                  <div className="hidden">
+                    <DemoButton />
                   </div>
                 </div>
               </div>
