@@ -291,7 +291,7 @@ const Contact: React.FC = () => {
               <div>
                 <h4 className="font-semibold text-lg">Visit Us</h4>
                 <p className="mt-1 text-sm">
-                  #306, 2nd Floor NSIC - Software Technology Business Park<br />
+                  #306, 2nd Floor NSIC - Software Technology Business Park,
                   B 24, Guindy Industrial Estate, Ekkatuthangal, Chennai - 600032
                 </p>
               </div>
