@@ -5,7 +5,7 @@ import { templateMeta as enquiryGreetingsTemplate } from './enquiry_greetings.te
 export type ComponentType = 'body' | 'header';
 
 type ComponentParam = {
-  key: keyof any;
+  key: string;
   type: 'text' | 'date_time' | 'image';
   component: ComponentType;
 };
@@ -20,11 +20,14 @@ export type TemplateMeta<T extends object> = {
   componentsMap: ComponentParam[];
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let cachedRegistry: Record<string, TemplateMeta<any>> | null = null;
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function getTemplateRegistry(): Record<string, TemplateMeta<any>> {
   if (cachedRegistry) return cachedRegistry;
-
+  
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
   const registry: Record<string, TemplateMeta<any>> = {};
 
   // Manually register each template

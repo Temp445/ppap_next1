@@ -34,7 +34,7 @@ export function generateWhatsAppPayload<T extends object>(
     const componentMap = new Map<string, Parameter[]>();
 
     for (const { key, type, component } of meta.componentsMap) {
-        const value = (data as any)[key]; 
+        const value = (data as Record<string, unknown>)[key as string];
 
         let param: Parameter;
 
