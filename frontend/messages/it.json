@@ -140,6 +140,9 @@
   },
   "Testimonials": {
     "Title": "Feedback dei clienti sui nostri servizi PPAP",
+    "name1": "Karthik",
+    "name2": "Rajesh Kumar",
+    "name3": "Priya",
     "Quote1": "Il PPAP mi è sempre sembrato complicato, ma questo servizio ha semplificato tutto. Mi sono sentito sicuro nel presentare i documenti sapendo che erano verificati e completi.",
     "Quote2": "Era la mia prima esperienza con una submission PPAP e all’inizio ero perso. Le linee guida e i modelli hanno reso il processo semplice e senza stress.",
     "Quote3": "Il team ha dimostrato grande competenza e ci ha guidato senza intoppi in ogni fase dei requisiti PPAP, garantendo conformità e precisione."
@@ -147,7 +150,7 @@
  "Contact": {
    "Title": "Contattaci e",
   "highlight": "prenota subito la tua demo!",
-      "BookDemo": "Prenota una demo",
+  "BookDemo": "Prenota una demo",
   "code": "IT",
   "Form": {
     "Name": "Nome",

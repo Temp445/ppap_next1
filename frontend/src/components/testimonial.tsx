@@ -13,17 +13,17 @@ const t = useTranslations('Testimonials')
   const testimonials = [
   {
     id: 1,
-    name: 'Karthik',
+    name: t('name1'),
     quote: t('Quote1'),
   },
   {
     id: 2,
-    name: 'Priya',
+    name: t('name2'),
     quote: t('Quote2'),
   },
   {
     id: 3,
-    name: 'Rajesh Kumar',
+    name: t('name3'),
     quote: t('Quote3'),
   },
 ];

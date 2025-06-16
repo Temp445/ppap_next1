@@ -10,6 +10,7 @@ import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import 'react-phone-number-input/style.css';
 import icon from "../assets/CF.jpg";
 import { useTranslations } from "next-intl";
+import { CountryCode } from 'libphonenumber-js';
 
 const service_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
 const template_ID = process.env.NEXT_PUBLIC_EMAILJS_ENQ_TEMPLATE_ID!;
@@ -19,7 +20,9 @@ const adminPhones = process.env.NEXT_PUBLIC_ADMIN_PHONES?.split(',').map((p) => 
 
 const Contact: React.FC = () => {
  
-  const t = useTranslations('Contact')
+  const t = useTranslations('Contact');
+  const countryCode = t('code') as CountryCode || 'IN';
+
 
   const form = useRef<HTMLFormElement | null>(null);
   const [email, setEmail] = useState('');
@@ -173,7 +176,7 @@ const Contact: React.FC = () => {
                 <label className="lg:text-lg font-medium">{t('Form.Phone')} :</label>
                 <PhoneInput
                   international
-                  defaultCountry="IN"
+                  defaultCountry={countryCode}
                   value={phone}
                   onChange={setPhone}
                   required

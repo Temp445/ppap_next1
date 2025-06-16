@@ -17,7 +17,7 @@ const Advantage = () => {
  t('point7'),
 ];
   return (
-    <div className="bg-gradient-to-br from-white via-gray-50 to-gray-100 pt-14 md:pt-0 md:py-16 px-2 md:px-4">
+    <div className="bg-gradient-to-br from-white via-gray-50 to-gray-100 pt-14 md:pt-10 md:py-16  px-2 md:px-4">
       <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12">
 
           <div className="lg:w-1/2 flex justify-center relative">
