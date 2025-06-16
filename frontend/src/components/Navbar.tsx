@@ -13,7 +13,11 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import logo from "../assets/AceLogo.png";
+import { useTranslations } from "next-intl";
+
 const Navbar: FC = () => {
+const t = useTranslations('Navbar')
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -55,7 +59,7 @@ const Navbar: FC = () => {
             className="flex items-center text-white hover:text-white text-base font-semibold relative px-4 py-2 rounded-full transition-all duration-300 ease-in-out hover:bg-orange-600"
           >
             <Star className="w-4 h-4 mr-2" />
-            Features
+            {t('Links.Features')}
           </Link>
 
           <Link
@@ -63,7 +67,7 @@ const Navbar: FC = () => {
             className="flex items-center text-white hover:text-white text-base font-semibold relative px-4 py-2 rounded-full transition-all duration-300 ease-in-out hover:bg-orange-600"
           >
             <DollarSign className="w-4 h-4 mr-2" />
-            Pricing
+             {t('Links.Pricing')}
           </Link>
 
           <Link
@@ -71,7 +75,7 @@ const Navbar: FC = () => {
             className="flex items-center text-white hover:text-white text-base font-semibold relative px-4 py-2 rounded-full transition-all duration-300 ease-in-out hover:bg-orange-600"
           >
             <FileText className="w-4 h-4 mr-2" />
-            Book A Demo
+            {t('Links.BookDemo')}
           </Link>
 
           <Link
@@ -79,7 +83,7 @@ const Navbar: FC = () => {
             className="flex items-center text-white hover:text-white text-base font-semibold relative px-4 py-2 rounded-full transition-all duration-300 ease-in-out hover:bg-orange-600"
           >
             <Users className="w-4 h-4 mr-2" />
-            Clients
+            {t('Links.Clients')}
           </Link>
         </div>
 
@@ -92,7 +96,7 @@ const Navbar: FC = () => {
                 className="flex items-center text-[#102E50] text-base font-semibold"
               >
                 <House className="w-4 h-4 mr-2" />
-                Home
+                {t('Links.Home')}
               </Link>
               <Link
                 href="#features"
@@ -100,7 +104,7 @@ const Navbar: FC = () => {
                 className="flex items-center text-[#102E50] text-base font-semibold"
               >
                 <Star className="w-4 h-4 mr-2" />
-                Feature
+                {t('Links.Features')}
               </Link>
 
               <Link
@@ -109,7 +113,7 @@ const Navbar: FC = () => {
                 className="flex items-center text-[#102E50]  text-base font-semibold"
               >
                 <DollarSign className="w-4 h-4 mr-2" />
-                Pricing
+                 {t('Links.Pricing')}
               </Link>
 
               <Link
@@ -118,7 +122,7 @@ const Navbar: FC = () => {
                 className="flex items-center text-[#102E50]  text-base font-semibold"
               >
                 <FileText className="w-4 h-4 mr-2" />
-                Contact Us
+                {t('Links.Contact')}
               </Link>
 
               <Link
@@ -127,7 +131,7 @@ const Navbar: FC = () => {
                 className="flex items-center text-[#102E50]  text-base font-semibold"
               >
                 <Users className="w-4 h-4 mr-2" />
-                Clients
+                {t('Links.Clients')}
               </Link>
             </div>
           </div>
@@ -138,7 +142,7 @@ const Navbar: FC = () => {
             href="https://webapp.acecms.in/"
             className="hover:bg-green-700 hover hover:border-green-700 border text-white px-4 py-1 md:px-2 lg:px-6 xl:py-2 rounded-md font-medium hover:opacity-90 transition"
           >
-            Sign In
+            {t('Links.SignIn')}
           </Link>
         </div>
       </nav>
@@ -158,7 +162,7 @@ const Navbar: FC = () => {
           className="flex flex-col items-center justify-center text-white w-full"
         >
           <span className="w-full h-12  bg-gradient-to-r from-red-500 to-red-400 flex items-center justify-center">
-            Sign In
+            {t('Links.SignIn')}
           </span>
         </Link>
 

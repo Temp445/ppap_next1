@@ -1,0 +1,184 @@
+{
+  "Menu": {
+    "Project": "Project",
+    "ProjectTooltip": "プロジェクトを簡素化。チームに力を。",
+    "CRM": "CRM",
+    "CRMTooltip": "顧客を知り、ビジネスを成長。",
+    "CMS": "CMS",
+    "CMSTooltip": "校正を自動化。精度を確保。",
+    "AllProducts": "全製品"
+  },
+  "Navbar": {
+    "Links": {
+      "Home": "ホーム",
+      "Features": "機能",
+      "Pricing": "価格",
+      "BookDemo": "デモを予約",
+      "Clients": "クライアント",
+      "Contact": "お問い合わせ",
+      "SignIn": "サインイン",
+      "AllProducts": "全製品"
+    }
+  },
+  "Hero": {
+    "Title": "高品質でコンプライアンスに準拠した製造のための生産部品承認プロセス（PPAP）サービス",
+    "Subtitle": "業界最高峰のソフトウェアでPPAPワークフローを自動化 — 常に迅速に品質を提供",
+    "List": {
+      "DesignRecords": "設計記録",
+      "FMEA": "プロセスFMEA",
+      "ControlPlans": "管理計画",
+      "MSA": "MSAスタディ",
+      "Flow": "プロセスフロー",
+      "PSW": "PSW"
+    },
+    "Button": "デモを予約",
+    "watchDemo": "デモを見る"
+  },
+  "WhyChoose": {
+    "Title": "とは何か",
+    "Para": "<ppap>{ppap}</ppap>は標準化されたプロセスであり、特に自動車や航空宇宙産業で利用されます。供給業者が常に設計・品質・仕様要件を満たす部品を製造できるよう保証します。",
+    "heading": "選ばれる理由",
+    "description1": "はPPAP管理を一括対応するソフトウェアで、製造者やサプライヤーが18のPPAP要素を迅速・正確・法令準拠に提出できるよう支援します。",
+    "description2": "対象業界：",
+  "highlight": "自動車、航空宇宙、および産業分野",
+  "description3": "中央集約型で監査対応のプラットフォーム上で、PPAPの全ライフサイクルを効率化します。",
+    "points": {
+      "storage": "安全なドキュメントストレージ",
+      "paperwork": "管理業務の削減",
+      "compliance": "監査対応済みコンプライアンス",
+      "submissions": "迅速なPPAP提出"
+    },
+    "cta": "No.1 PPAPソフトウェアを体験 — 今すぐデモを予約！",
+    "clients": "主要クライアントが信頼"
+  },
+  "Advantage": {
+    "title": "の利点",
+    "point1": "統合的で包括的なPPAP管理システム",
+    "point2": "重複作業を排除し、時間と労力を削減",
+    "point3": "提出・監査のために常に準備された文書",
+    "point4": "チームの責任感と所有意識を向上",
+    "point5": "情報が集中管理され、個人依存ではない",
+    "point6": "常にPPAP文書を最新に保つ革新的なプラットフォーム",
+    "point7": "最新のPPAP基準とISO/TS 16949に常時準拠"
+  },
+  "Feature": {
+    "Title": "の主な機能",
+    "button": {
+      "readMore": "続きを読む",
+      "showLess": "非表示"
+    },
+    "items": [
+      { "number": 1, "title": "設計記録", "description": "AIEまたはサプライヤーによる設計責任に応じた完全な設計図。" },
+      { "number": 2, "title": "技術変更書", "description": "ECN（技術変更通知）など、製品や設計変更の正式記録。" },
+      { "number": 3, "title": "顧客技術承認", "description": "AIEによるPPAP前の技術試験と承認。通常は一時的変更やサンプル試験を通じて実施。" },
+      { "number": 4, "title": "設計FMEA", "description": "設計の潜在的な不具合モードとその影響のリスク分析。AIEとサプライヤー両者承認済み。" },
+      { "number": 5, "title": "プロセスフロー", "description": "品質検査や不適合品管理を含む製造工程全体の詳細な可視化。" },
+      { "number": 6, "title": "プロセスFMEA", "description": "生産中の潜在的な不具合モード評価と高リスク項目の対策プラン。" },
+      { "number": 7, "title": "管理計画", "description": "各生産段階での品質管理措置を定義し文書化。" },
+      { "number": 8, "title": "MSAスタディ", "description": "重要測定機器のGage R&Rスタディと校正記録の管理。" },
+      { "number": 9, "title": "寸法結果", "description": "すべての特性に対する実測値と結果をバルーン図に記録。" },
+      { "number": 10, "title": "材料＆性能試験結果", "description": "DVP&R資料、試験結果および材料証明書を保管。" },
+      { "number": 11, "title": "初期プロセス調査", "description": "プロセス安定性を示すSPCチャートおよび能力指数の生成。" },
+      { "number": 12, "title": "認定試験所文書", "description": "外部試験結果に対する認定試験所の証明書添付。" },
+      { "number": 13, "title": "外観承認報告書 (AAR)", "description": "AAIフォーム、表面試験、外観確認を提出。" },
+      { "number": 14, "title": "サンプル製品", "description": "初期生産からの物理的サンプルの提出および追跡を管理。" },
+      { "number": 15, "title": "マスターサンプル", "description": "最終承認済みサンプルを操作訓練や将来参照のため記録・保管。" },
+      { "number": 16, "title": "検査補助具", "description": "特別検査ツール用の画像、校正データおよび寸法報告をアップロード。" },
+      { "number": 17, "title": "顧客固有要求への適合", "description": "AIEの特定試験および検証基準への準拠を証明する文書。" },
+      { "number": 18, "title": "PSW", "description": "提出されたすべての文書および承認をまとめたPSWを自動生成。" }
+    ]
+  },
+  "Demo": {
+    "heading": "PPAPプロセスを簡素化する方法をご覧ください",
+    "button": "今すぐデモを予約！"
+  },
+  "Pricing": {
+    "Title": "サブスクリプションオプション",
+    "Subtitle": "最適なソリューションでスマートに成長",
+    "Yearly": "年次",
+    "Custompricing": "カスタム価格設定",
+    "Plans": {
+      "name1": "エッセンシャル",
+      "desc1": "PPAP初心者に最適",
+      "button1": "今すぐ加入",
+      "name2": "スタンダード",
+      "desc2": "PPAPユーザーにおすすめ",
+      "tag2": "賢い選択",
+      "name3": "プロ",
+      "desc3": "PPAPの専門家向け",
+      "tag3": "フルレベル",
+      "name4": "エンタープライズ",
+      "desc4": "企業向けカスタムソリューション",
+      "button4": "お問い合わせ",
+      "tag4": "カスタムプラン",
+      "Enterprisefeatures": [
+        "プロ機能とカスタマイズオプションを提供",
+        "お客様のニーズに合わせてカスタマイズ可能",
+        "ニーズに応じたソリューションをご相談ください"
+      ]
+    },
+    "FeaturesTitle": "主な機能：",
+    "Features": {
+      "EssentialNote": "最大10",
+      "BasicPlusNote": "最大25",
+      "premiumNote": "最大50",
+      "enterpriseNote": "無制限",
+      "Limit": "PTAP制限",
+      "Upto2": "月2件の提出まで",
+      "Upto20": "有効期間中20件の提出",
+      "Upto50": "有効期間中50件の提出",
+      "Download": "基本ドキュメントのダウンロード",
+      "Documentation": "効率的なドキュメンテーション",
+      "Storage": "安全な保存",
+      "Export": "エクスポートオプション"
+    },
+    "Toggle": {
+      "ShowFeatures": "機能リスト",
+      "ReadMore": "続きを読む",
+      "ShowLess": "閉じる"
+    }
+  },
+  "Testimonials": {
+    "Title": "当社PPAPサービスに関する顧客の声",
+    "Quote1": "PPAPはずっと難しいと思っていましたが、このサービスですべてが簡単になりました。チェック済みで完全な書類を自信を持って提出できました。",
+    "Quote2": "PPAP提出は初めてで、最初は戸惑いました。ガイドとテンプレートがプロセスを明確かつストレスフリーにしてくれました。",
+    "Quote3": "チームは専門知識を発揮し、PPAPの各段階をシームレスに案内してくれて、遵守と正確性を保証しました。"
+  },
+ "Contact": {
+  "Title": "今すぐご連絡いただき、",
+  "highlight": "デモを予約しましょう！",
+  "BookDemo": "デモを予約",
+  "code": "JP",
+  "Form": {
+    "Name": "名前",
+    "Company": "会社名",
+    "Email": "ビジネス用メール",
+    "Phone": "携帯番号",
+    "Location": "所在地",
+    "Product": "興味のある製品",
+    "Queries": "お問い合わせ内容",
+    "Submit": "送信",
+    "Submitting": "送信中…",
+    "EmailError": "有効なメールアドレスを入力してください。",
+    "PhoneError": "有効な電話番号を入力してください。"
+  },
+  "ContactInfo": {
+    "Title": "連絡先情報",
+    "EmailUs": "メールでお問い合わせ",
+    "CallUs": "お電話ください",
+    "Hours": "月〜土 10:00〜18:30",
+    "VisitUs": "ご来社はこちら",
+    "Address": "#306、2階、NSICソフトウェア技術ビジネスパーク、B 24、グインディ工業地帯、エッカトゥタンガル、チェンナイ - 600032"
+  },
+  "Messages": {
+    "Success": "メッセージが正常に送信されました！",
+    "Failure": "メッセージの送信中にエラーが発生しました。後ほどもう一度お試しください。",
+    "ValidationUnavailable": "メール検証サービスが利用できません。"
+  }
+},
+  "Footer": {
+    "Description": "Ace PPAPは、ドキュメントを集中管理し常に最新に保ち、コンプライアンスを組み込み、チームの責任感を高めることでPPAPプロセスをスリム化——時間を節約し、承認を迅速化します。",
+    "QuickLinks": { "Title": "クイックリンク", "Features": "機能", "Clients": "クライアント", "Pricing": "価格", "Contact": "お問い合わせ" },
+    "FollowUs": { "Title": "フォローする" }
+  }
+}

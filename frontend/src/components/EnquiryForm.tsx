@@ -8,7 +8,7 @@ import emailjs from '@emailjs/browser';
 import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import { sendWhatsappMessage } from "../services/whatsapp/whatsappService";
-
+import { useTranslations } from 'next-intl';
 
 const service_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
 const template_ID = process.env.NEXT_PUBLIC_EMAILJS_ENQ_TEMPLATE_ID!;
@@ -17,6 +17,8 @@ const adminPhones = process.env.NEXT_PUBLIC_ADMIN_PHONES?.split(',').map((p) => 
 
 
 export default function EnquiryForm() {
+  const t = useTranslations('Contact')
+
   const form = useRef<HTMLFormElement | null>(null);
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState<string>("");
@@ -136,13 +138,13 @@ export default function EnquiryForm() {
         <div className="backdrop-blur-lg bg-white/10 border border-gray-600 rounded-3xl">
           <div className="text-center mb-2">
             <h2 className="text-2xl font-bold text-white mb-2 bg-[#155E95] rounded-t-3xl p-4">
-              Book A <span>Demo</span>
+              {t('BookDemo')}
             </h2>
           </div>
           <div className="p-6">
             <form ref={form} onSubmit={handleSubmit} className="space-y-4">
               <div className="flex flex-wrap gap-2 w-full ml-1">
-                <label className="text-base font-medium">Product Interested:</label>
+                <label className="text-base font-medium">{t('Form.Product')}:</label>
                 <input
                   type="text"
                   name="product"
@@ -160,7 +162,7 @@ export default function EnquiryForm() {
                 <input
                   type="text"
                   name="Name"
-                  placeholder="Full Name"
+                  placeholder={`${t('Form.Name')}`}
                   required
                   className="w-full pl-12 pr-4 py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black"
                 />
@@ -173,7 +175,7 @@ export default function EnquiryForm() {
                 <input
                   type="text"
                   name="company"
-                  placeholder="Company Name"
+                  placeholder={`${t('Form.Company')}`}
                   required
                   className="w-full pl-12 pr-4 py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black"
                 />
@@ -188,7 +190,7 @@ export default function EnquiryForm() {
                   name="email"
                   value={email}
                   onChange={handleEmailChange}
-                  placeholder="Email Address"
+                  placeholder={`${t('Form.Email')}`}
                   required
                   className={`w-full pl-12 pr-4 py-4 bg-white/10 border ${
                     emailError ? 'border-red-600' : 'border-gray-600'
@@ -213,7 +215,7 @@ export default function EnquiryForm() {
                 <input
                   type="text"
                   name="location"
-                  placeholder="Location"
+                  placeholder={`${t('Form.Location')}`}
                   required
                   className="w-full pl-12 pr-4 py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black"
                 />
@@ -225,7 +227,7 @@ export default function EnquiryForm() {
                 </div>
                 <textarea
                   name="queries"
-                  placeholder="Your Query"
+                  placeholder={`${t('Form.Queries')}`}
                   rows={4}
                   className="w-full pl-12 pr-4 py-4 bg-white/10 border border-gray-600 rounded text-black placeholder-black resize-none"
                 />
@@ -239,12 +241,12 @@ export default function EnquiryForm() {
                 {loading ? (
                   <>
                     <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                    Sending...
+                    {t('Form.Submitting') }
                   </>
                 ) : (
                   <>
                     <Send className="w-5 h-5" />
-                    Send Enquiry
+                    {t('Form.Submit') }
                   </>
                 )}
               </button>

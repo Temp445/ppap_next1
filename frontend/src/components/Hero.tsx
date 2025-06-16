@@ -7,8 +7,18 @@ import img2 from "../assets/PPAP1.jpg";
 import img3 from "../assets/PPAP2.jpg";
 import img4 from "../assets/PPAP5.jpg";
 import DemoButton from "./DemoButton";
+import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
 const Hero = () => {
+
+const locale = useLocale();
+  const t = useTranslations('Hero')
+
+  const size = {
+    ru: ' lg:text-2xl xl:text-3xl 2xl:text-4xl',
+  }[locale] || 'lg:text-4xl xl:text-4xl 2xl:text-5xl';
+
   return (
     <div className="relative min-h-fit overflow-hidden bg-[#155E95]" id="top">
       <div className="relative min-h-fit container mx-auto">
@@ -26,7 +36,7 @@ const Hero = () => {
               height={32}
             />
             <span className="text-lg font-bold text-white tracking-wide mt-1">
-              ACE CMS
+              ACE PPAP
             </span>
           </div>
 
@@ -87,45 +97,39 @@ const Hero = () => {
               <div className="md:max-w-2xl mx-auto lg:mx-0 space-y-8">
                 <div className="space-y-4">
                   <h1 className="md:hidden text-xl text-white font-bold text-center">
-                    Production Part Approval Process (PPAP) Services for
-                    High-Quality, Compliant Manufacturing
+                    {t('Title')}
                   </h1>
-                  <h1 className=" hidden md:block text-4xl  lg:text-4xl xl:text-4xl 2xl:text-5xl font-black text-white leading-tight">
-                    Production Part Approval Process (PPAP) Services for
-                    High-Quality, Compliant Manufacturing
+                  <h1 className={` hidden md:block text-4xl  ${size}  font-black text-white leading-tight `}>
+                    {t('Title')}
                     <span className="relative text-white"></span>
                   </h1>
                 </div>
 
                 <p className=" text-sm md:text-xl text-gray-300 leading-relaxed font-medium max-w-xl mx-auto lg:mx-0">
-                  Automate Your PPAP Workflow with Industry-Leading Software —
-                  Deliver Quality Faster, Every Time
+                  {t('Subtitle')}
                 </p>
 
                 <div>
                   <ul className=" text-sm md:text-lg list-none pl-0 space-y-2 text-white font-semibold grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
                     <li>
-                      <span className="text-red-500 mr-2">&#9679;</span>Design
-                      Records
+                      <span className="text-red-500 mr-2">&#9679;</span>{t('List.DesignRecords')}
                     </li>
                     <li>
-                      <span className="text-blue-500 mr-2">&#9679;</span>Process
-                      FMEA
+                      <span className="text-blue-500 mr-2">&#9679;</span>{t('List.FMEA')}
                     </li>
                     <li className="-ml-4">
                       <span className="text-green-500 mr-2">&#9679;</span>
-                      Control Plans
+                      {t('List.ControlPlans')}
                     </li>
                     <li>
-                      <span className="text-orange-500 mr-2">&#9679;</span>MSA
-                      Studies
+                      <span className="text-orange-500 mr-2">&#9679;</span>{t('List.MSA')}
                     </li>
                     <li className="hidden md:block">
                       <span className="text-indigo-500 mr-2">&#9679;</span>
-                      Process Flow
+                      {t('List.Flow')}
                     </li>
                     <li className="hidden md:block">
-                      <span className="text-purple-500 mr-2">&#9679;</span>PSW
+                      <span className="text-purple-500 mr-2">&#9679;</span>{t('List.PSW')}
                     </li>
                   </ul>
                 </div>
@@ -134,7 +138,7 @@ const Hero = () => {
                     href="#contact"
                     className="group inline-flex items-center gap-3 px-4  py-2 md:py-3  hover:bg-orange-600  border hover:border-orange-600 text-white text-sm md:text-lg font-bold rounded  shadow-xl hover:shadow-2xl"
                   >
-                    <span>Book a Demo</span>
+                    <span>{t('Button')}</span>
                     <svg
                       className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
                       fill="none"

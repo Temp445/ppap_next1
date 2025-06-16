@@ -1,0 +1,184 @@
+{
+  "Menu": {
+    "Project": "Project",
+    "ProjectTooltip": "简化项目。赋能团队。",
+    "CRM": "CRM",
+    "CRMTooltip": "了解客户。推动业务增长。",
+    "CMS": "CMS",
+    "CMSTooltip": "自动校准。确保准确性。",
+    "AllProducts": "所有产品"
+  },
+  "Navbar": {
+    "Links": {
+      "Home": "首页",
+      "Features": "功能",
+      "Pricing": "价格",
+      "BookDemo": "预约演示",
+      "Clients": "客户",
+      "Contact": "联系我们",
+      "SignIn": "登录",
+      "AllProducts": "所有产品"
+    }
+  },
+  "Hero": {
+    "Title": "高质量、合规制造的生产件批准流程 (PPAP) 服务",
+    "Subtitle": "借助行业领先软件自动您的PPAP流程——每次都更快交付质量",
+    "List": {
+      "DesignRecords": "设计记录",
+      "FMEA": "工序FMEA",
+      "ControlPlans": "控制计划",
+      "MSA": "MSA研究",
+      "Flow": "工艺流程",
+      "PSW": "PSW"
+    },
+    "Button": "预约演示",
+    "watchDemo": "观看演示"
+  },
+  "WhyChoose": {
+    "Title": "什么是",
+    "Para": "<ppap>{ppap}</ppap> 是一个标准化流程，主要用于制造业，特别是汽车和航空航天行业，以确保供应商能持续生产符合客户工程、质量和规范要求的零件。",
+    "heading": "为什么选择",
+    "description1": " 是一款一体化PPAP管理软件，使制造商和供应商能够自动化并高效、准确、合规地提交所有18项PPAP元素。",
+    "description2": "专为以下行业设计：",
+  "highlight": "汽车、航空航天和工业领域",
+  "description3": "在一个集中化、可审计的平台上简化整个 PPAP 生命周期。",
+    "points": {
+      "storage": "安全文档存储",
+      "paperwork": "减少手动文书工作",
+      "compliance": "审计就绪合规性",
+      "submissions": "更快的PPAP提交"
+    },
+    "cta": "体验#1 PPAP软件 – 立即预约演示！",
+    "clients": "领先客户信任之选"
+  },
+  "Advantage": {
+    "title": "的优势",
+    "point1": "全面且完全集成的PPAP管理系统",
+    "point2": "消除重复工作，节省时间与精力",
+    "point3": "文档始终准备提交或审核",
+    "point4": "提高团队责任与参与度",
+    "point5": "信息集中，非个人依赖",
+    "point6": "创新平台持续更新PPAP文档",
+    "point7": "始终符合最新PPAP标准及ISO/TS 16949"
+  },
+  "Feature": {
+    "Title": "的核心功能",
+    "button": {
+      "readMore": "阅读更多",
+      "showLess": "收起"
+    },
+    "items": [
+      { "number": 1, "title": "设计记录", "description": "完整的设计图纸，由AIE或供应商根据设计责任提供。" },
+      { "number": 2, "title": "工程变更文件", "description": "如ECN等正式记录，描述任何产品或设计变更。" },
+      { "number": 3, "title": "客户工程批准", "description": "AIE在PPAP前进行工程试验和批准，通过临时偏差和样品测试完成。" },
+      { "number": 4, "title": "设计FMEA", "description": "分析潜在设计失效模式及其影响，AIE和供应商双方签署。" },
+      { "number": 5, "title": "工艺流程", "description": "详细展示整个制造过程，包括质量检查和不合格品处理。" },
+      { "number": 6, "title": "工序FMEA", "description": "评估生产过程中的潜在失效模式，并为高风险问题制定纠正措施。"},
+      { "number": 7, "title": "控制计划", "description": "定义并记录每个生产阶段的质量控制措施。" },
+      { "number": 8, "title": "MSA研究", "description": "进行Gage R&R研究并维护关键测量工具的校准记录。" },
+      { "number": 9, "title": "尺寸结果", "description": "记录气泡图上所有特征的实际测量值及结果。" },
+      { "number": 10, "title": "材料与性能测试结果", "description": "存储DVP&R文件、测试结果和材料认证。" },
+      { "number": 11, "title": "初始工序研究", "description": "生成SPC图表和能力指数，以展示工艺稳定性。" },
+      { "number": 12, "title": "合格实验室文档", "description": "为所有外部测试结果附加认可实验室证书。" },
+      { "number": 13, "title": "外观批准报告(AAR)", "description": "提交AAI表单、表面检测和部件外观验证。" },
+      { "number": 14, "title": "样品产品", "description": "管理初始生产的物理样品提交和跟踪。" },
+      { "number": 15, "title": "主样", "description": "记录并存储最终批准的样本，用于操作培训和未来参考。" },
+      { "number": 16, "title": "检测工具", "description": "上传特殊检测工具的图像、校准数据和尺寸报告。" },
+      { "number": 17, "title": "符合客户特定要求", "description": "确认符合AIE特定测试与验收标准的文档。" },
+      { "number": 18, "title": "PSW", "description": "自动生成PSW，总结所有提交的文档和批准。" }
+    ]
+  },
+  "Demo": {
+    "heading": "了解如何简化您的PPAP流程",
+    "button": "立即预约演示！"
+  },
+  "Pricing": {
+    "Title": "订阅选项",
+    "Subtitle": "使用合适的解决方案更智能增长",
+    "Yearly": "年度",
+    "Custompricing": "定制价格",
+    "Plans": {
+      "name1": "基础版",
+      "desc1": "适合PPAP初学者",
+      "button1": "立即订阅",
+      "name2": "标准版",
+      "desc2": "PPAP用户的最佳选择",
+      "tag2": "智能之选",
+      "name3": "专业版",
+      "desc3": "适合PPAP专业人士",
+      "tag3": "最高级",
+      "name4": "企业版",
+      "desc4": "面向企业的定制解决方案",
+      "button4": "联系我们",
+      "tag4": "定制计划",
+      "Enterprisefeatures": [
+        "提供专业版功能并支持定制",
+        "可按需定制满足具体需求",
+        "联系定制您的专属解决方案"
+      ]
+    },
+    "FeaturesTitle": "核心功能：",
+    "Features": {
+      "EssentialNote": "最多10",
+      "BasicPlusNote": "最多25",
+      "premiumNote": "最多50",
+      "enterpriseNote": "无限",
+      "Limit": "PPAP 限制",
+      "Upto2": "每月最多2次提交",
+      "Upto20": "有效期内最多20次提交",
+      "Upto50": "有效期内最多50次提交",
+      "Download": "基础文档下载",
+      "Documentation": "高效文档化",
+      "Storage": "安全存储",
+      "Export": "导出选项"
+    },
+    "Toggle": {
+      "ShowFeatures": "功能列表",
+      "ReadMore": "阅读更多",
+      "ShowLess": "收起"
+    }
+  },
+  "Testimonials": {
+    "Title": "客户对我们PPAP服务的反馈",
+    "Quote1": "PPAP我一直觉得很复杂，但这个服务让一切变得简单。我在提交文档时很有信心，因为它们经过检查且完整。",
+    "Quote2": "这是我第一次提交PPAP，一开始我很迷茫。提供的指导和模板使整个过程变得直观无压力。",
+    "Quote3": "团队展现了深厚的专业知识，在PPAP的每个阶段无缝引导我们，确保合规与准确。"
+  },
+ "Contact": {
+  "Title": "请立即联系我们，",
+  "highlight": "立即预约演示！",
+  "BookDemo": "预约演示",
+  "code": "CN",
+  "Form": {
+    "Name": "姓名",
+    "Company": "公司名称",
+    "Email": "商务邮箱",
+    "Phone": "手机号码",
+    "Location": "所在地区",
+    "Product": "感兴趣的产品",
+    "Queries": "咨询内容",
+    "Submit": "发送",
+    "Submitting": "发送中…",
+    "EmailError": "请输入有效的电子邮件地址。",
+    "PhoneError": "请输入有效的手机号码。"
+  },
+  "ContactInfo": {
+    "Title": "联系方式",
+    "EmailUs": "发送邮件给我们",
+    "CallUs": "给我们打电话",
+    "Hours": "周一至周六 10:00 — 18:30",
+    "VisitUs": "欢迎访问",
+    "Address": "#306，二楼，NSIC软件技术商务园，B 24，关迪工业区，埃卡图唐加尔，金奈 - 600032"
+  },
+  "Messages": {
+    "Success": "您的消息已成功发送！",
+    "Failure": "发送消息时出错，请稍后再试。",
+    "ValidationUnavailable": "电子邮件验证服务不可用。"
+  }
+},
+  "Footer": {
+    "Description": "Ace PPAP通过集中、实时更新文档、内置合规性及增强团队责任感，简化您的PPAP流程——节省时间，快速获批。",
+    "QuickLinks": { "Title": "快速链接", "Features": "功能", "Clients": "客户", "Pricing": "价格", "Contact": "联系我们" },
+    "FollowUs": { "Title": "关注我们" }
+  }
+}

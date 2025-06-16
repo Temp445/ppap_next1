@@ -1,0 +1,186 @@
+{
+  "Menu": {
+    "Project": "Project",
+    "ProjectTooltip": "Projekte vereinfachen. Teams stärken.",
+    "CRM": "CRM",
+    "CRMTooltip": "Kennen Sie Ihre Kunden. Wachsen Sie Ihr Geschäft.",
+    "CMS": "CMS",
+    "CMSTooltip": "Kalibrierung automatisieren. Genauigkeit sichern.",
+    "AllProducts": "Alle Produkte"
+  },
+  "Navbar": {
+    "Links": {
+      "Home": "Startseite",
+      "Features": "Funktionen",
+      "Pricing": "Preise",
+      "BookDemo": "Demo buchen",
+      "Clients": "Kunden",
+      "Contact": "Kontakt",
+      "SignIn": "Anmelden",
+      "AllProducts": "Alle Produkte"
+    }
+  },
+  "Hero": {
+    "Title": "PPAP‑Services (Production Part Approval Process) für hochwertige, regelkonforme Fertigung",
+    "Subtitle": "Automatisieren Sie Ihren PPAP‑Workflow mit marktführender Software – liefern Sie Qualität schneller, jedes Mal",
+    "List": {
+      "DesignRecords": "Konstruktionsunterlagen",
+      "FMEA": "Prozess‑FMEA",
+      "ControlPlans": "Kontrollpläne",
+      "MSA": "MSA‑Studien",
+      "Flow": "Prozessablauf",
+      "PSW": "PSW"
+    },
+    "Button": "Demo buchen",
+    "watchDemo": "Demo ansehen"
+  },
+  "WhyChoose": {
+    "Title": "Was ist",
+    "Para": " bedeutet <ppap>{ppap}</ppap>. Es ist ein standardisierter Prozess in der Fertigung, insbesondere Automobil‑ und Luftfahrtindustrie, um sicherzustellen, dass ein Lieferant Teile konstant nach den technischen, Qualitäts‑ und Spezifikationsanforderungen des Kunden produzieren kann.",
+    "heading": "Warum wählen",
+    "description1": " ist eine All‑in‑one‑PPAP‑Management‑Software, mit der Hersteller und Zulieferer alle 18 Elemente des PPAP‑Prozesses automatisiert, schnell, präzise und regelkonform einreichen können.",
+      "description2": "Entwickelt für",
+  "highlight": "die Automobil-, Luft- und Raumfahrt- sowie Industriebranchen",
+  "description3": "es rationalisiert den gesamten PPAP-Lebenszyklus auf einer zentralisierten, auditfähigen Plattform.",
+    "points": {
+      "storage": "Sichere Dokumentenspeicherung",
+      "paperwork": "Weniger manueller Papierkram",
+      "compliance": "Audit‑bereite Compliance",
+      "submissions": "Schnellere PPAP‑Einreichungen"
+    },
+    "cta": "Erleben Sie die PPAP‑Software Nr. 1 – Buchen Sie noch heute Ihre Demo!",
+    "clients": "Vertrauenswürdige Top‑Kunden"
+  },
+  "Advantage": {
+    "title": "Vorteile von",
+    "point1": "Umfassendes und vollständig integriertes PPAP‑Verwaltungssystem",
+    "point2": "Eliminiert doppelte Arbeit, spart Zeit und Aufwand",
+    "point3": "Dokumente sind stets einreich‑ oder auditbereit",
+    "point4": "Verbessert Verantwortlichkeit und Engagement der Teams",
+    "point5": "Informationen sind zentral und nicht an Einzelpersonen gebunden",
+    "point6": "Innovative Plattform, die PPAP‑Dokumente kontinuierlich aktuell hält",
+    "point7": "Immer konform mit den neuesten PPAP‑Standards und ISO/TS 16949"
+  },
+  "Feature": {
+    "Title": "Kernfunktionen von",
+    "button": {
+      "readMore": "Mehr lesen",
+      "showLess": "Weniger anzeigen"
+    },
+    "items": [
+      { "number": 1, "title": "Konstruktionsunterlagen", "description": "Komplette Konstruktionszeichnungen, bereitgestellt von AIE oder dem Lieferanten je nach Verantwortlichkeit." },
+      { "number": 2, "title": "Engineering‑Änderungsdokumente", "description": "Formale Unterlagen wie ECNs, die Produkt‑ oder Designänderungen beschreiben." },
+      { "number": 3, "title": "Kunden‑Engineering‑Freigabe", "description": "Pre‑PPAP‑Versuche und Freigaben durch AIE via temporäre Abweichungen und Musterprüfungen." },
+      { "number": 4, "title": "Design‑FMEA", "description": "Risikoanalyse möglicher Konstruktions‑Fehlerarten, freigegeben von AIE und dem Lieferanten." },
+      { "number": 5, "title": "Prozessablauf", "description": "Detaillierte Visualisierung des gesamten Herstellungsprozesses, inkl. Qualitätskontrollen und Behandlung von Nichtkonformitäten." },
+      { "number": 6, "title": "Prozess‑FMEA", "description": "Bewertung möglicher Fehlerarten in der Produktion mit Korrekturmaßnahmen bei hohen Risiken." },
+      { "number": 7, "title": "Kontrollplan", "description": "Definition und Dokumentation der Qualitätskontrollen in jeder Produktionsphase." },
+      { "number": 8, "title": "MSA‑Studien", "description": "Durchführung von Gage R&R‑Studien und Pflege der Kalibrierungsnachweise für kritische Messmittel." },
+      { "number": 9, "title": "Dimensionale Ergebnisse", "description": "Aufzeichnung der tatsächlichen Messwerte aller Merkmale auf der Bemaßungszeichnung." },
+      { "number": 10, "title": "Material‑ und Leistungstest‑Ergebnisse", "description": "Ablage von DVP&R‑Dokumenten, Testergebnissen und Materialzertifikaten." },
+      { "number": 11, "title": "Initiale Prozessstudien", "description": "Erstellung von SPC‑Diagrammen und Fähigkeitskennwerten zur Darstellung der Prozessstabilität." },
+      { "number": 12, "title": "Dokumentation qualifizierter Labore", "description": "Anhänge von Zertifikaten akkreditierter Labore für alle externen Testberichte." },
+      { "number": 13, "title": "Appearance‑Approval‑Report", "description": "Einreichung von AAI‑Formularen, Oberflächenprüfung und visueller Teilevalidierung." },
+      { "number": 14, "title": "Produktmuster", "description": "Verwaltung der Einreichung und Nachverfolgung physischer Anfangsmuster." },
+      { "number": 15, "title": "Master‑Muster", "description": "Dokumentation und Archivierung der final freigegebenen Muster für Schulung und Referenz." },
+      { "number": 16, "title": "Prüfhilfen", "description": "Upload von Bildern, Kalibrierdaten und Maßberichte für spezielle Prüfwerkzeuge." },
+      { "number": 17, "title": "Kundenspezifische Anforderungen", "description": "Dokumentation, die die Einhaltung der speziellen Test- und Validierungskriterien von AIE bestätigt." },
+      { "number": 18, "title": "PSW", "description": "Automatische Erstellung der PSW zur Zusammenfassung aller eingereichten Unterlagen und Freigaben." }
+    ]
+  },
+  "Demo": {
+    "heading": "Erfahren Sie, wie Sie Ihren PPAP‑Prozess vereinfachen",
+    "button": "Jetzt Demo buchen!"
+  },
+  "Pricing": {
+    "Title": "Abonnement‑Optionen",
+    "Subtitle": "Wachsen Sie smarter mit der passenden Lösung",
+    "Yearly": "Jährlich",
+    "Custompricing": "Individuelle Preisgestaltung",
+    "Plans": {
+      "name1": "Essential",
+      "desc1": "Perfekt für PPAP‑Einsteiger",
+      "button1": "Jetzt abonnieren",
+      "name2": "Standard",
+      "desc2": "Beste Wahl für PPAP‑Nutzer",
+      "tag2": "Kluge Wahl",
+      "name3": "Pro",
+      "desc3": "Für PPAP‑Profis",
+      "tag3": "Maximales Niveau",
+      "name4": "Enterprise",
+      "desc4": "Maßgeschneiderte Lösungen für Unternehmen",
+      "button4": "Kontaktieren Sie uns",
+      "tag4": "Individuell geplant",
+      "Enterprisefeatures": [
+        "Enthält Pro‑Funktionen plus Anpassungsmöglichkeiten",
+        "Anpassbar an Ihre genauen Anforderungen",
+        "Kontaktieren Sie uns für eine maßgeschneiderte Lösung"
+      ]
+    },
+    "FeaturesTitle": "Hauptfunktionen:",
+    "Features": {
+      "EssentialNote": "Max 10",
+      "BasicPlusNote": "Max 25",
+      "premiumNote": "Max 50",
+      "enterpriseNote": "Unbegrenzt",
+      "Limit": "PPAP‑Limit",
+      "Upto2": "Bis zu 2 Einreichungen pro Monat",
+      "Upto20": "20 Einreichungen pro Gültigkeitszeitraum",
+      "Upto50": "50 Einreichungen pro Gültigkeitszeitraum",
+      "Download": "Basisherunterladen von Dokumenten",
+      "Documentation": "Effiziente Dokumentation",
+      "Storage": "Sichere Speicherung",
+      "Export": "Exportoptionen"
+    },
+    "Toggle": {
+      "ShowFeatures": "Funktionsliste",
+      "ReadMore": "Mehr lesen",
+      "ShowLess": "Weniger anzeigen"
+    }
+  },
+  "Testimonials": {
+    "Title": "Kundenfeedback zu unseren PPAP‑Services",
+    "Quote1": "PPAP schien mir immer kompliziert, aber dieser Service hat alles vereinfacht. Ich war sicher, dass die Dokumente geprüft und vollständig sind.",
+    "Quote2": "Es war mein erster PPAP‑Einreichung und ich war anfangs verloren. Die Anleitung und Vorlagen machten den Prozess klar und stressfrei.",
+    "Quote3": "Das Team zeigte umfassende Expertise und führte uns nahtlos durch jede PPAP‑Phase, um Compliance und Genauigkeit sicherzustellen."
+  },
+    "Contact": {
+  "Title": "Kontaktieren Sie uns und",
+  "highlight": "vereinbaren Sie jetzt Ihre Demo!",
+      "BookDemo": "Demo buchen",
+  "code": "DE",
+  "Form": {
+    "Name": "Name",
+    "Company": "Firmenname",
+    "Email": "Geschäftliche E‑Mail",
+    "Phone": "Handynummer",
+    "Location": "Ort",
+    "Product": "Interessiertes Produkt",
+    "Queries": "Anfragen",
+    "Submit": "Senden",
+    "Submitting": "Wird gesendet...",
+    "EmailError": "Bitte geben Sie eine gültige E‑Mail-Adresse ein.",
+    "PhoneError": "Bitte geben Sie eine gültige Telefonnummer ein."
+  },
+  "ContactInfo": {
+    "Title": "Kontaktinformationen",
+    "EmailUs": "Schreiben Sie uns",
+    "CallUs": "Rufen Sie uns an",
+    "Hours": "Mo–Sa von 10:00 bis 18:30 Uhr",
+    "VisitUs": "Besuchen Sie uns",
+    "Address": "#306, 2. Etage, NSIC Software-Technologiepark, B 24, Industriegebiet Guindy, Ekkatuthangal, Chennai - 600032"
+
+  },
+  "Messages": {
+    "Success": "Ihre Nachricht wurde erfolgreich gesendet!",
+    "Failure": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+    "ValidationUnavailable": "E‑Mail‑Validierungsdienst nicht verfügbar."
+  }
+},
+
+  "Footer": {
+    "Description": "Ace PPAP optimiert Ihren PPAP‑Prozess mit zentralisierten, stets aktuellen Dokumenten, integrierter Compliance und besserer Verantwortlichkeit im Team – sparen Sie Zeit und erhalten Sie schnellere Genehmigungen.",
+    "QuickLinks": { "Title": "Schnelllinks", "Features": "Funktionen", "Clients": "Kunden", "Pricing": "Preise", "Contact": "Kontakt" },
+    "FollowUs": { "Title": "Folgen Sie uns" }
+  }
+}

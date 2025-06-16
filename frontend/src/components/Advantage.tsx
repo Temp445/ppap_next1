@@ -1,19 +1,21 @@
 import Image from "next/image";
 import icon5 from "../assets/PPAP6.jpg";
 import { PiArrowBendDoubleUpRightFill } from "react-icons/pi";
+import { useTranslations } from "next-intl";
 
-const advantages = [
-  " Comprehensive and fully integrated PPAP management system",
-   "Eliminates duplication of work, saving time and effort",
-  "Documents are always ready for submission or audit",
-  " Improves ownership and accountability across teams",
-  "Information is centralized, not dependent on any individual",
-  "Innovative platform that keeps PPAP documents continuously updated",
-  " Always compliant with the latest PPAP standards and ISO/TS 16949",
-  
-];
+
 
 const Advantage = () => {
+  const t = useTranslations('Advantage');
+  const advantages = [
+ t('point1'),
+ t('point2'),
+ t('point3'),
+ t('point4'),
+ t('point5'),
+ t('point6'),
+ t('point7'),
+];
   return (
     <div className="bg-gradient-to-br from-white via-gray-50 to-gray-100 pt-14 md:pt-0 md:py-16 px-2 md:px-4">
       <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12">
@@ -33,7 +35,7 @@ const Advantage = () => {
 
         <div className="lg:w-1/2 space-y-6 px-3">
           <h1 className="text-xl md:text-4xl font-extrabold text-[#102E50] leading-tight">
-            Advantages of <span className="text-orange-600">ACE PPAP</span>
+            {t('title')} <span className="text-orange-600">ACE PPAP</span>
           </h1>
           <ul className="space-y-4">
             {advantages.map((item, index) => (

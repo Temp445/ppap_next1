@@ -1,0 +1,185 @@
+{
+  "Menu": {
+    "Project": "Project",
+    "ProjectTooltip": "Simplifiez les projets. Responsabilisez les équipes.",
+    "CRM": "CRM",
+    "CRMTooltip": "Connaissez votre client. Développez votre entreprise.",
+    "CMS": "CMS",
+    "CMSTooltip": "Automatisez l’étalonnage. Garantissez la précision.",
+    "AllProducts": "Tous les produits"
+  },
+  "Navbar": {
+    "Links": {
+      "Home": "Accueil",
+      "Features": "Fonctionnalités",
+      "Pricing": "Tarifs",
+      "BookDemo": "Demander une démo",
+      "Clients": "Clients",
+      "Contact": "Contactez-nous",
+      "SignIn": "Connexion",
+      "AllProducts": "Tous les produits"
+    }
+  },
+  "Hero": {
+    "Title": "Services PPAP (Production Part Approval Process) pour une fabrication de haute qualité et conforme",
+    "Subtitle": "Automatisez votre flux PPAP avec un logiciel de référence — livrez la qualité plus vite, à chaque fois",
+    "List": {
+      "DesignRecords": "Dossiers de conception",
+      "FMEA": "AMDEC de procédé",
+      "ControlPlans": "Plans de contrôle",
+      "MSA": "Études MSA",
+      "Flow": "Flux de procédé",
+      "PSW": "PSW"
+    },
+    "Button": "Demander une démo",
+    "watchDemo": "Voir la démo"
+  },
+  "WhyChoose": {
+    "Title": "Qu’est-ce que",
+    "Para": " signifie <ppap>{ppap}</ppap>. C’est un processus standardisé utilisé en fabrication, notamment dans l’automobile et l’aérospatiale, pour garantir qu’un fournisseur peut produire de façon constante des pièces conformes aux exigences client en ingénierie, qualité et spécifications.",
+    "heading": "Pourquoi choisir",
+    "description1": " est un logiciel de gestion PPAP tout-en-un qui permet aux fabricants et fournisseurs d’automatiser et de soumettre les 18 éléments du PPAP avec rapidité, précision et conformité.",
+   "description2": "Conçu pour",
+  "highlight": "les secteurs automobile, aérospatial et industriel",
+  "description3": "il rationalise l'ensemble du cycle de vie PPAP sur une plateforme centralisée, prête pour les audits.",
+    "points": {
+      "storage": "Stockage sécurisé des documents",
+      "paperwork": "Moins de paperasse manuelle",
+      "compliance": "Conformité prête pour l’audit",
+      "submissions": "Soumissions PPAP plus rapides"
+    },
+    "cta": "Découvrez le logiciel PPAP #1 – Demandez votre démo dès maintenant !",
+    "clients": "Approuvé par des clients de premier plan"
+  },
+  "Advantage": {
+    "title": "Avantages de",
+    "point1": "Système PPAP complet et entièrement intégré",
+    "point2": "Élimine les tâches redondantes, gagnez du temps et des efforts",
+    "point3": "Documents toujours prêts pour la soumission ou l’audit",
+    "point4": "Améliore la responsabilité et l’implication des équipes",
+    "point5": "Informations centralisées, pas dépendantes d’une personne",
+    "point6": "Plateforme innovante maintenant continuellement à jour les documents PPAP",
+    "point7": "Toujours conforme aux dernières normes PPAP et ISO/TS 16949"
+  },
+  "Feature": {
+    "Title": "Fonctionnalités principales de",
+    "button": {
+      "readMore": "En savoir plus",
+      "showLess": "Masquer"
+    },
+    "items": [
+      { "number": 1, "title": "Dossiers de conception", "description": "Plans de conception complets fournis par AIE ou le fournisseur selon la responsabilité." },
+      { "number": 2, "title": "Documents de changement d’ingénierie", "description": "Documents formels comme ECN décrivant toute modification produit ou design." },
+      { "number": 3, "title": "Approbation d’ingénierie client", "description": "Essais pré‑PPAP et approbations par AIE, via dérogations temporaires et tests d’échantillons." },
+      { "number": 4, "title": "AMDEC de conception", "description": "Analyse des risques de défaillance du design signée par AIE et le fournisseur." },
+      { "number": 5, "title": "Flux de procédé", "description": "Visualisation détaillée du processus manufacturier, contrôle qualité et gestion des non‑conformités." },
+      { "number": 6, "title": "AMDEC de procédé", "description": "Évaluation des modes de défaillance en production avec plans correctifs pour les risques élevés." },
+      { "number": 7, "title": "Plan de contrôle", "description": "Définition et documentation des mesures de contrôle qualité à chaque étape." },
+      { "number": 8, "title": "Études MSA", "description": "Réalisation d’études Gage R&R et suivi des calibrations des instruments critiques." },
+      { "number": 9, "title": "Résultats dimensionnels", "description": "Enregistrement des mesures réelles pour toutes les dimensions sur le plan annoté." },
+      { "number": 10, "title": "Résultats des tests matériaux & performance", "description": "Stockage des documents DVP&R, résultats de tests et certifications matériaux." },
+      { "number": 11, "title": "Études de procédé initiales", "description": "Génération de cartes SPC et indices de capabilité pour démontrer la stabilité du procédé." },
+      { "number": 12, "title": "Documentation laboratoire qualifié", "description": "Attachement de certifications de laboratoires accrédités pour tous les tests externes." },
+      { "number": 13, "title": "Rapport d’approbation esthétique", "description": "Soumission des formulaires AAI, tests de finition et validation visuelle des pièces." },
+      { "number": 14, "title": "Échantillon de produit", "description": "Gestion de la soumission et du suivi des échantillons physiques initiaux." },
+      { "number": 15, "title": "Échantillon maître", "description": "Enregistrement et stockage des échantillons approuvés pour formation et référence." },
+      { "number": 16, "title": "Aides de contrôle", "description": "Téléchargement d’images, données de calibration et rapports dimensionnels pour outils d’inspection spéciaux." },
+      { "number": 17, "title": "Conformité aux exigences client", "description": "Documentation prouvant le respect des critères de test et validation spécifiques AIE." },
+      { "number": 18, "title": "PSW", "description": "Génération automatique de PSW résumant tous les documents et approbations soumis." }
+    ]
+  },
+  "Demo": {
+    "heading": "Apprenez à simplifier votre Production Part Approval Process",
+    "button": "Réservez une démo dès maintenant !"
+  },
+  "Pricing": {
+    "Title": "Options d’abonnement",
+    "Subtitle": "Évoluez intelligemment avec la solution adaptée",
+    "Yearly": "Annuel",
+    "Custompricing": "Tarification personnalisée",
+    "Plans": {
+      "name1": "Essentiel",
+      "desc1": "Parfait pour les débutants PPAP",
+      "button1": "Souscrire maintenant",
+      "name2": "Standard",
+      "desc2": "Meilleur choix pour les utilisateurs PPAP",
+      "tag2": "Choix malin",
+      "name3": "Pro",
+      "desc3": "Idéal pour les professionnels PPAP",
+      "tag3": "Niveau max",
+      "name4": "Enterprise",
+      "desc4": "Solutions personnalisées pour entreprises",
+      "button4": "Contactez-nous",
+      "tag4": "Plan personnalisé",
+      "Enterprisefeatures": [
+        "Inclut les fonctionnalités Pro et des options personnalisables",
+        "Adaptable à vos besoins exacts",
+        "Contactez-nous pour une solution sur mesure"
+      ]
+    },
+    "FeaturesTitle": "Fonctionnalités clés :",
+    "Features": {
+      "EssentialNote": "Max 10",
+      "BasicPlusNote": "Max 25",
+      "premiumNote": "Max 50",
+      "enterpriseNote": "Illimité",
+      "Limit": "Limite PPAP",
+      "Upto2": "Jusqu’à 2 soumissions par mois",
+      "Upto20": "20 soumissions par période de validité",
+      "Upto50": "50 soumissions par période de validité",
+      "Download": "Téléchargement basique des documents",
+      "Documentation": "Documentation efficace",
+      "Storage": "Stockage sécurisé",
+      "Export": "Options d’export"
+    },
+    "Toggle": {
+      "ShowFeatures": "Liste des fonctionnalités",
+      "ReadMore": "En savoir plus",
+      "ShowLess": "Masquer"
+    }
+  },
+  "Testimonials": {
+    "Title": "Avis clients sur nos services PPAP",
+    "Quote1": "Le PPAP me semblait toujours compliqué, mais ce service a tout simplifié. Je me sentais confiant en soumettant les documents sachant qu’ils étaient vérifiés et complets.",
+    "Quote2": "C’était ma première soumission PPAP, j’étais un peu perdu. Les guides et modèles fournis ont rendu tout le processus clair et sans stress.",
+    "Quote3": "L’équipe a démontré une expertise approfondie et nous a guidés sans accroc à chaque étape des exigences PPAP, assurant conformité et précision."
+  },
+   "Contact": {
+  "Title": "Contactez-nous et",
+  "highlight": "planifiez votre démo dès maintenant !",
+  "BookDemo": "Demander une démo",
+  "code": "FR",
+  "Form": {
+    "Name": "Nom",
+    "Company": "Nom de l'entreprise",
+    "Email": "Email professionnel",
+    "Phone": "Numéro de mobile",
+    "Location": "Emplacement",
+    "Product": "Produit d'intérêt",
+    "Queries": "Questions",
+    "Submit": "Envoyer",
+    "Submitting": "Envoi en cours...",
+    "EmailError": "Veuillez saisir une adresse e-mail valide.",
+    "PhoneError": "Veuillez saisir un numéro de téléphone valide."
+  },
+  "ContactInfo": {
+    "Title": "Coordonnées",
+    "EmailUs": "Envoyez-nous un email",
+    "CallUs": "Appelez-nous",
+    "Hours": "Lun-Sam de 10h à 18h30",
+    "VisitUs": "Visitez-nous",
+    "Address": "#306, 2e étage, NSIC - Parc technologique des logiciels, B 24, Zone industrielle de Guindy, Ekkatuthangal, Chennai - 600032"
+  },
+  "Messages": {
+    "Success": "Votre message a été envoyé avec succès !",
+    "Failure": "Un problème est survenu lors de l’envoi de votre message. Veuillez réessayer ultérieurement.",
+    "ValidationUnavailable": "Service de validation de l’email indisponible."
+  }
+},
+
+  "Footer": {
+    "Description": "Ace PPAP rationalise votre processus PPAP avec des documents centralisés et à jour, conformité intégrée et meilleure responsabilisation des équipes : gagnez du temps et obtenez des approbations plus rapides.",
+    "QuickLinks": { "Title": "Liens rapides", "Features": "Fonctionnalités", "Clients": "Clients", "Pricing": "Tarifs", "Contact": "Contact" },
+    "FollowUs": { "Title": "Suivez-nous" }
+  }
+}

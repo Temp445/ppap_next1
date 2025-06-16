@@ -9,6 +9,7 @@ import { sendWhatsappMessage } from "../services/whatsapp/whatsappService";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import 'react-phone-number-input/style.css';
 import icon from "../assets/CF.jpg";
+import { useTranslations } from "next-intl";
 
 const service_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
 const template_ID = process.env.NEXT_PUBLIC_EMAILJS_ENQ_TEMPLATE_ID!;
@@ -17,6 +18,9 @@ const adminPhones = process.env.NEXT_PUBLIC_ADMIN_PHONES?.split(',').map((p) => 
 
 
 const Contact: React.FC = () => {
+ 
+  const t = useTranslations('Contact')
+
   const form = useRef<HTMLFormElement | null>(null);
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState<string>("");
@@ -32,13 +36,13 @@ const Contact: React.FC = () => {
         body: JSON.stringify({ email }),
       });
 
-      if (!response.ok) return 'Please enter a valid email address.';
+        if (!response.ok) return t('Form.EmailError');
 
       const result = await response.json();
-      return result.isValid ? '' : 'Please enter a valid email address.';
+      return result.isValid ? '' : t('Form.EmailError');
     } catch (err) {
       console.error('Email validation error:', err);
-      return 'Email validation service unavailable.';
+      return t('Messages.ValidationUnavailable');
     }
   };
 
@@ -65,7 +69,7 @@ const Contact: React.FC = () => {
     }
 
     if (!phone || !isValidPhoneNumber(phone)) {
-      setPhoneError('Please enter a valid phone number.');
+      setPhoneError(t('Form.PhoneError'));
       return;
     } else {
       setPhoneError('');
@@ -85,13 +89,13 @@ const Contact: React.FC = () => {
 
     try {
       await emailjs.send(service_ID, template_ID, formData, publicKey);
-      alert('Your message has been sent successfully!');
+      alert(t('Messages.Success'));
       formCurrent.reset();
       setEmail('');
       setPhone('');
     } catch (error) {
       console.error('Email sending failed:', error);
-      alert('There was an issue sending your message. Please try again later.');
+      alert(t('Messages.Failure'));
     } finally {
       setLoading(false);
     }
@@ -134,29 +138,29 @@ const Contact: React.FC = () => {
 
         <div className="md:w-7/12 border p-5 md:p-10 rounded md:rounded-none md:border-[#155E95]">
           <h2 className="text-xl md:text-3xl font-semibold text-[#102E50] mb-6">
-            Get in touch and <strong className="text-orange-600">schedule your demo now!</strong>
+            {t('Title')} <strong className="text-orange-600">{t('highlight')}</strong>
           </h2>
           <form ref={form} onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex flex-col">
-                <label className="lg:text-lg font-medium">Name :</label>
-                <input type="text" name="Name" required placeholder="Name *" className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full" />
+                <label className="lg:text-lg font-medium">{t('Form.Name')} :</label>
+                <input type="text" name="Name" required placeholder={`${t('Form.Name')} *`} className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full" />
               </div>
               <div className="flex flex-col">
-                <label className="lg:text-lg font-medium">Company Name :</label>
-                <input type="text" name="company" required placeholder="Company Name *" className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full" />
+                <label className="lg:text-lg font-medium">{t('Form.Company')} :</label>
+                <input type="text" name="company" required placeholder={`${t('Form.Company')} *`} className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full" />
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex flex-col">
-                <label className="lg:text-lg font-medium">Business Email :</label>
+                <label className="lg:text-lg font-medium">{t('Form.Email')} :</label>
                 <input
                   type="email"
                   name="email"
                   value={email}
                   required
-                  placeholder="Email *"
+                  placeholder={`${t('Form.Email')} *`}
                   onChange={handleEmailChange}
                   className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full"
                 />
@@ -166,7 +170,7 @@ const Contact: React.FC = () => {
               </div>
 
               <div className="flex flex-col">
-                <label className="lg:text-lg font-medium">Mobile Number :</label>
+                <label className="lg:text-lg font-medium">{t('Form.Phone')} :</label>
                 <PhoneInput
                   international
                   defaultCountry="IN"
@@ -180,18 +184,18 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="flex flex-col">
-              <label className="lg:text-lg font-medium">Location :</label>
-              <input type="text" name="location" placeholder="Location" required className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full" />
+              <label className="lg:text-lg font-medium">{t('Form.Location')} :</label>
+              <input type="text" name="location" placeholder={`${t('Form.Location')} *`} required className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full" />
             </div>
 
             <div className="flex gap-2">
-              <label className="lg:text-lg font-medium flex flex-nowrap">Product Interested :</label>
+              <label className="lg:text-lg font-medium flex flex-nowrap">{t('Form.Product')} :</label>
               <input type="text" name="product" defaultValue="ACE PPAP" readOnly className=" w-1/2 lg:text-lg font-semibold" />
             </div>
 
             <div className="flex flex-col">
-              <label className="lg:text-lg font-medium">Queries :</label>
-              <textarea name="queries" required placeholder="Queries *" className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full h-24" />
+              <label className="lg:text-lg font-medium">{t('Form.Queries')} :</label>
+              <textarea name="queries" required placeholder={`${t('Form.Queries')} *`} className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full h-24" />
             </div>
 
             <button
@@ -199,7 +203,7 @@ const Contact: React.FC = () => {
               disabled={loading}
               className="bg-[#155E95] text-white py-2 px-4 rounded hover:bg-green-500 flex items-center gap-2 md:text-lg"
             >
-              {loading ? "Sending..." : "Send"}
+              {loading ? t('Form.Submitting') : t('Form.Submit')}
               <SendHorizontal className="w-4 h-4" />
             </button>
           </form>
@@ -211,7 +215,7 @@ const Contact: React.FC = () => {
               <Image fill src={icon} alt="bg" className="object-cover object-center opacity-50" />
               <div className="z-40 text-center">
                 <h1 className="text-black font-bold">ACE PPAP</h1>
-                <h3 className="text-2xl font-bold text-black">Contact Information</h3>
+                <h3 className="text-2xl font-bold text-black">{t('ContactInfo.Title')}</h3>
               </div>
             </div>
           </div>
@@ -222,7 +226,7 @@ const Contact: React.FC = () => {
                 <Mails className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </div>
               <div>
-                <h4 className="font-semibold text-lg">Email Us</h4>
+                <h4 className="font-semibold text-lg">{t('ContactInfo.EmailUs')}</h4>
                 <p className="mt-1 text-sm">sales@acesoft.in</p>
               </div>
             </div>
@@ -232,9 +236,9 @@ const Contact: React.FC = () => {
                 <PhoneCall className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </div>
               <div>
-                <h4 className="font-semibold text-lg">Call Us</h4>
+                <h4 className="font-semibold text-lg">{t('ContactInfo.CallUs')}</h4>
                 <p className="mt-1 text-sm">+91 9840137210</p>
-                <p className="opacity-90 text-sm">Mon-Sat from 10am to 6:30pm</p>
+                <p className="opacity-90 text-sm">{t('ContactInfo.Hours')}</p>
               </div>
             </div>
 
@@ -243,10 +247,9 @@ const Contact: React.FC = () => {
                 <MapPinned className="w-5 h-5 md:w-6 md:h-6 text-white" />
               </div>
               <div>
-                <h4 className="font-semibold text-lg">Visit Us</h4>
+                <h4 className="font-semibold text-lg">{t('ContactInfo.VisitUs')}</h4>
                 <p className="mt-1 text-sm">
-                  #306, 2nd Floor NSIC - Software Technology Business Park,
-                  B 24, Guindy Industrial Estate, Ekkatuthangal, Chennai - 600032
+                {t('ContactInfo.Address')}
                 </p>
               </div>
             </div>

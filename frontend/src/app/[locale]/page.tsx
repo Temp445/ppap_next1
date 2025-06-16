@@ -12,11 +12,13 @@ import PPAP from '@/components/ppap'
 import Feature from '@/components/Feature'
 import Advantage from '@/components/Advantage'
 import Demo from '@/components/Demo'
+import Navbar1 from '@/components/Navbar1'
 
 
 const Home = () => {
   return (
     <div>
+      <Navbar1/>
     <div className='container mx-auto absolute md:hidden'><Navbar/></div>
     <Hero/>
     <PPAP/>

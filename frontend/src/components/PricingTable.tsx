@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { LuSquareArrowOutUpRight } from 'react-icons/lu';
+import { useTranslations } from 'next-intl';
 
 interface Feature {
   name: string;
@@ -17,6 +18,7 @@ interface Feature {
 
 interface Plan {
   name: string;
+  displayname: string;
   desc: string;
   tools?: string;
   Price?: string;
@@ -32,22 +34,26 @@ interface FeatureIconProps {
 }
 
 const PricingTable: React.FC = () => {
+ 
+  const t = useTranslations('Pricing');
+
   const features: Feature[] = [
-    { name: 'PPAP Limit', Essential: true, EssentialNote: 'Max 10', BasicPlus: true, BasicPlusNote: 'Max 25', premium: true, premiumNote: 'Max 50', enterprise: true, enterpriseNote: 'Unlimited' },
-    { name: 'Up to 2 submission per month', Essential: true, BasicPlus: undefined, premium: undefined, enterprise: true },
-    { name: '20 submissions per validity period', Essential: undefined, BasicPlus: true, premium: undefined, enterprise: true },
-    { name: '50 submissions per validity period', Essential: undefined, BasicPlus: undefined, premium: true, enterprise: true },
-    { name: 'Basic download documents', Essential: true, BasicPlus: true, premium: true, enterprise: true },
-    { name: 'Efficient Documentation', Essential: true, BasicPlus: true, premium: true, enterprise: true },
-    { name: 'Secure Storage', Essential: true, BasicPlus: true, premium: true, enterprise: true },
-    { name: 'Export Options', Essential: true, BasicPlus: true, premium: true, enterprise: true },
+    { name: t('Features.Limit'), Essential: true, EssentialNote: t('Features.EssentialNote'), BasicPlus: true, BasicPlusNote: t('Features.BasicPlusNote'), premium: true, premiumNote: t('Features.premiumNote'), enterprise: true, enterpriseNote: t('Features.enterpriseNote') },
+    { name: t('Features.Upto2'), Essential: true, BasicPlus: undefined, premium: undefined, enterprise: true },
+    { name: t('Features.Upto20'), Essential: undefined, BasicPlus: true, premium: undefined, enterprise: true },
+    { name: t('Features.Upto50'), Essential: undefined, BasicPlus: undefined, premium: true, enterprise: true },
+    { name: t('Features.Download'), Essential: true, BasicPlus: true, premium: true, enterprise: true },
+    { name: t('Features.Documentation'), Essential: true, BasicPlus: true, premium: true, enterprise: true },
+    { name: t('Features.Storage'), Essential: true, BasicPlus: true, premium: true, enterprise: true },
+    { name: t('Features.Export'), Essential: true, BasicPlus: true, premium: true, enterprise: true },
   ];
 
   const plans: Plan[] = [
     {
       name: 'Essential',
-      desc: 'Perfect for PPAP beginners',
-      buttonText: 'Subscribe Now',
+      displayname:t('Plans.name1'),
+      desc: t('Plans.desc1'),
+      buttonText: t('Plans.button1'),
       buttonlink: '#',
       buttonClass: 'bg-none border text-gray-800 hover:bg-[#155E95] hover:text-white',
       highlighted: false,
@@ -55,30 +61,34 @@ const PricingTable: React.FC = () => {
     },
     {
       name: 'Standard',
-      desc: 'Best choice for PPAP users',
-      buttonText: 'Subscribe Now',
+      displayname:t('Plans.name2'),
+      desc: t('Plans.desc2'),
+      buttonText: t('Plans.button1'),
       buttonlink: '#',
       buttonClass: 'bg-none border text-gray-800 hover:bg-[#155E95] hover:text-white',
       highlighted: true,
-      tag: 'Smart Choice',
+      tag: t('Plans.tag2'),
     },
     {
       name: 'Pro',
-      desc: 'Best for PPAP professionals',
-      buttonText: 'Subscribe Now',
+      displayname:t('Plans.name3'),
+      desc: t('Plans.desc3'),
+      buttonText: t('Plans.button1'),
       buttonlink: '#',
       buttonClass: 'bg-none border text-gray-800 hover:bg-[#155E95] hover:text-white',
       highlighted: false,
-      tag: 'Max level',
+      tag: t('Plans.tag3'),
     },
     {
       name: 'Enterprise',
-      desc: 'Custom solutions for enterprises',
-      buttonText: 'Contact Us',
+      displayname:t('Plans.name4'),
+      desc: t('Plans.desc4'),
+      buttonText: t('Plans.button4'),
       buttonlink: '#contact',
       buttonClass: 'bg-none border text-gray-800 hover:bg-[#155E95] hover:text-white',
       highlighted: false,
-      tag: 'Custom Plan',
+      tag: t('Plans.tag4'),
+
     },
   ];
 
@@ -109,8 +119,8 @@ const PricingTable: React.FC = () => {
   return (
     <div className="w-full container mx-auto px-5 sm:px-6 md:px-4 lg:px-2 xl:px-4 py-16" id="pricing">
       <div className="text-center mb-10">
-        <h1 className="text-2xl md:text-4xl font-bold text-[#102E50] mb-2">Subscription Options</h1>
-        <p className="text-lg md:text-3xl text-gray-600 mb-6">Grow smarter with the right solution</p>
+        <h1 className="text-2xl md:text-4xl font-bold text-[#102E50] mb-2">{t('Title')}</h1>
+        <p className="text-lg md:text-3xl text-gray-600 mb-6">{t('Subtitle')}</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4 lg:gap-2 xl:gap-4">
@@ -129,17 +139,17 @@ const PricingTable: React.FC = () => {
               </div>
             )}
             <div className="p-6 lg:p-4 xl:p-8 flex flex-col h-full">
-              <h2 className="text-xl md:text-2xl font-bold text-[#102E50] mb-2">{plan.name}</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-[#102E50] mb-2">{plan.displayname}</h2>
               <p className="text-gray-600 mb-4">{plan.desc}</p>
 
               <div className="mb-6 text-[#155E95] font-extrabold text-2xl md:text-3xl">
                 {plan.name !== 'Enterprise' ? (
                   <>
                     ₹{prices[plan.name].toLocaleString()}
-                    <span className="text-base md:text-lg font-semibold text-gray-600 ml-1">/Yearly</span>
+                    <span className="text-base md:text-lg font-semibold text-gray-600 ml-1">/{t('Yearly')}</span>
                   </>
                 ) : (
-                  <span className="text-lg font-semibold text-gray-600">Custom pricing</span>
+                  <span className="text-lg font-semibold text-gray-600">{t('Custompricing')}</span>
                 )}
               </div>
 
@@ -152,12 +162,14 @@ const PricingTable: React.FC = () => {
 
               {plan.name === 'Enterprise' && (
                 <div className="mb-6 mt-6 hidden md:block">
-                  <h3 className="font-semibold text-gray-900 mb-4">Key features:</h3>
-                  <ul className="space-y-1 text-gray-700">
-                    <li className="flex gap-3"><span className="text-green-600">✓</span>Offers Pro features along with customization options</li>
-                    <li className="flex gap-3"><span className="text-green-600">✓</span>Customizable to your exact needs</li>
-                    <li className="flex gap-3"><span className="text-green-600">✓</span>Reach out for a solution built around your needs</li>
-                  </ul>
+                  <h3 className="font-semibold text-gray-900 mb-4">{t('FeaturesTitle')}</h3>
+               <ul className="space-y-1 text-gray-700">
+                      {t.raw('Plans.Enterprisefeatures').map((feature: string, i: number) => (
+                        <li key={i} className="flex gap-3">
+                          <span className="text-green-600">✓</span>{feature}
+                        </li>
+                      ))}
+                    </ul>
                 </div>
               )}
 
@@ -165,13 +177,13 @@ const PricingTable: React.FC = () => {
                 className="w-full md:hidden bg-[#155E95] text-white py-2 rounded mt-6 font-semibold flex items-center justify-center"
                 onClick={() => togglePlanFeatures(plan.name)}
               >
-                Features List <LuSquareArrowOutUpRight className="ml-2 text-lg" />
+                {t('Toggle.ShowFeatures')} <LuSquareArrowOutUpRight className="ml-2 text-lg" />
               </button>
 
               <div className={`mt-6 transition-all duration-300 ${expandedPlans[plan.name] ? 'block' : 'hidden'} md:block`}>
                 {plan.name !== 'Enterprise' && (
                   <>
-                    <h3 className="font-semibold text-gray-900 mb-4">Key features:</h3>
+                    <h3 className="font-semibold text-gray-900 mb-4">{t('FeaturesTitle')}</h3>
                     <div className="space-y-2 text-gray-700">
                       {renderFeatureList(features, getFeatureKey(plan.name), plan.name)}
                     </div>
@@ -180,11 +192,13 @@ const PricingTable: React.FC = () => {
 
                 {plan.name === 'Enterprise' && (
                   <div className="mb-6 mt-6 md:hidden">
-                    <h3 className="font-semibold text-gray-900 mb-4">Key features:</h3>
-                    <ul className="space-y-1 text-gray-700">
-                    <li className="flex gap-3"><span className="text-green-600">✓</span>Offers Pro features along with customization options</li>
-                    <li className="flex gap-3"><span className="text-green-600">✓</span>Customizable to your exact needs</li>
-                    <li className="flex gap-3"><span className="text-green-600">✓</span>Reach out for a solution built around your needs</li>
+                    <h3 className="font-semibold text-gray-900 mb-4">{t('FeaturesTitle')}:</h3>
+                  <ul className="space-y-1 text-gray-700">
+                      {t.raw('Plans.Enterprisefeatures').map((feature: string, i: number) => (
+                        <li key={i} className="flex gap-3">
+                          <span className="text-green-600">✓</span>{feature}
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 )}

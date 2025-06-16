@@ -1,0 +1,279 @@
+{
+  "Menu": {
+    "Project": "Project",
+    "ProjectTooltip": "Simplify Projects. Empower Teams.",
+    "CRM": "CRM",
+    "CRMTooltip": "Know Your Customer. Grow Your Business.",
+    "CMS": "CMS",
+    "CMSTooltip": "Automate Calibration. Ensure Accuracy.",
+    "AllProducts": "All Products"
+  },
+
+
+  "Navbar": {
+  "Links": {
+    "Home": "Home",
+    "Features": "Features",
+    "Pricing": "Pricing",
+    "BookDemo": "Book A Demo",
+    "Clients": "Clients",
+    "Contact": "Contact Us",
+    "SignIn": "Sign In",
+    "AllProducts": "All Products"
+  }},
+
+  "Hero": {
+    "Title": "Production Part Approval Process (PPAP) Services for High-Quality, Compliant Manufacturing",
+    "Subtitle": "Automate Your PPAP Workflow with Industry-Leading Software — Deliver Quality Faster, Every Time",
+    "List": {
+      "DesignRecords": "Design Records",
+      "FMEA": "Process FMEA",
+      "ControlPlans": "Control Plans",
+      "MSA": "MSA Studies",
+      "Flow": "Process Flow",
+      "PSW": "PSW"
+    },
+    "Button": "Book a Demo",
+    "watchDemo": "Watch Demo"
+
+  },
+
+  "WhyChoose": {
+     "Title": "What is",
+    "Para" : " stands for <ppap>{ppap}</ppap>. It is a standardized process used in manufacturing, especially in the automotive and aerospace industries, to ensure that a supplier can consistently produce parts that meet all customer engineering, quality, and specification requirements.",
+    "heading": "Why Choose",
+    "description1": " is an all-in-one PPAP management software that enables manufacturers and suppliers to automate and submit all 18 Production Part Approval Process elements with speed, accuracy, and compliance.",
+    "description2": "Designed for",
+    "highlight": "automotive, aerospace, and industrial sectors",
+    "description3" : "it streamlines the full PPAP lifecycle in a centralized, audit-ready platform.",
+    "points": {
+      "storage": "Secure Document Storage",
+      "paperwork": "Less Manual Paperwork",
+      "compliance": "Audit-Ready Compliance",
+      "submissions": "Faster PPAP Submissions"
+    },
+    "cta": "Experience the #1 PPAP Software – Book Your Demo Today!",
+    "clients": "Trusted by Leading Clients"
+  },
+
+  "Advantage" : {
+    "title": "Advantages of",
+    "point1": "Comprehensive and fully integrated PPAP management system",
+    "point2": "Eliminates duplication of work, saving time and effort",
+    "point3": "Documents are always ready for submission or audit",
+    "point4": "Improves ownership and accountability across teams",
+    "point5": "Information is centralized, not dependent on any individual",
+    "point6": "Innovative platform that keeps PPAP documents continuously updated",
+    "point7": "Always compliant with the latest PPAP standards and ISO/TS 16949"
+
+  },
+
+  "Feature": {
+    "Title": "Core Features of",
+    "button": {
+      "readMore": "Read More",
+      "showLess": "Show Less"
+    },
+    "items": [
+      {
+        "number": 1,
+        "title": "Design Records",
+        "description": "Complete design drawings supplied by either AIE or the supplier, depending on design responsibility."
+      },
+      {
+        "number": 2,
+        "title": "Engineering Change Documents",
+        "description": "Formal records such as Engineering Change Notices (ECNs) describing any product or design modifications."
+      },
+      {
+        "number": 3,
+        "title": "Customer Engineering Approval",
+        "description": "Pre-PPAP engineering trials and approvals by AIE, typically through temporary deviations and sample testing."
+      },
+      {
+        "number": 4,
+        "title": "Design FMEA",
+        "description": "Risk analysis of potential design failure modes and their effects, signed off by both AIE and the supplier."
+      },
+      {
+        "number": 5,
+        "title": "Process Flow",
+        "description": "Detailed visualization of the entire manufacturing process, including quality checks and handling of non-conforming parts."
+      },
+      {
+        "number": 6,
+        "title": "Process FMEA",
+        "description": "Evaluation of potential failure modes during production with corrective action plans for high-risk issues."
+      },
+      {
+        "number": 7,
+        "title": "Control Plan",
+        "description": "Define and document quality control measures for every stage of production."
+      },
+      {
+        "number": 8,
+        "title": "Measurement System Analysis Studies",
+        "description": "Perform Gage R&R studies and maintain calibration records for critical measurement tools."
+      },
+      {
+        "number": 9,
+        "title": "Dimensional Results",
+        "description": "Record actual measurement values and results for all features on the ballooned drawing."
+      },
+      {
+        "number": 10,
+        "title": "Material & Performance Test Results",
+        "description": "Store DVP&R documents, test outcomes, and material certifications."
+      },
+      {
+        "number": 11,
+        "title": "Initial Process Studies",
+        "description": "Generate SPC charts and capability indices to demonstrate process stability."
+      },
+      {
+        "number": 12,
+        "title": "Qualified Laboratory Documentation",
+        "description": "Attach certifications from accredited labs for all external test results."
+      },
+      {
+        "number": 13,
+        "title": "Appearance Approval Report (AAR)",
+        "description": "Submit AAI forms, surface finish tests, and part appearance validations."
+      },
+      {
+        "number": 14,
+        "title": "Sample Product",
+        "description": "Manage submission and tracking of physical samples from initial production."
+      },
+      {
+        "number": 15,
+        "title": "Master Sample",
+        "description": "Record and store final approved samples for operator training and future reference."
+      },
+      {
+        "number": 16,
+        "title": "Checking Aids",
+        "description": "Upload images, calibration data, and dimensional reports for special inspection tools."
+      },
+      {
+        "number": 17,
+        "title": "Compliance with Customer-Specific Requirements",
+        "description": "Documentation confirming adherence to AIE’s specific testing and validation criteria."
+      },
+      {
+        "number": 18,
+        "title": "Part Submission Warrant (PSW)",
+        "description": "Automatically generate PSWs to summarize all submitted documentation and approvals."
+      }
+    ]
+  },
+
+  "Demo":{
+    "heading": "Learn how to simplify your Production Part Approval Process",
+    "button": "Book A Demo Now!"
+  },
+
+  
+  "Pricing": {
+    "Title": "Subscription Options",
+    "Subtitle": "Grow smarter with the right solution",
+     "Yearly": "Yearly",
+    "Custompricing": "Custom pricing",
+
+      "PlansName": {
+
+  },
+    "Plans": {
+        "name1": "Essential",
+        "desc1": "Perfect for PPAP beginners",
+        "button1": "Subscribe Now",
+
+        "name2": "Standard",
+        "desc2": "Best choice for PPAP users",
+        "tag2": "Smart Choice",
+       
+        "name3": "Pro",
+        "desc3": "Best for PPAP professionals",
+        "tag3": "Max level",
+      
+       "name4": "Enterprise",
+        "desc4": "Custom solutions for enterprises",
+        "button4": "Contact Us",
+        "tag4": "Custom Plan",
+        "Enterprisefeatures": [
+          "Offers Pro features along with customization options",
+          "Customizable to your exact needs",
+          "Reach out for a solution built around your needs"
+        ]
+    },
+
+    "FeaturesTitle": "Key features:",
+    "Features": {
+        "EssentialNote": "Max 10",
+        "BasicPlusNote": "Max 25",
+        "premiumNote": "Max 50",
+        "enterpriseNote": "Unlimited",
+        "Limit": "PPAP Limit",
+        "Upto2": "Up to 2 submission per month",
+        "Upto20": "20 submissions per validity period",
+        "Upto50": "50 submissions per validity period",
+        "Download": "Basic download documents",
+        "Documentation": "Efficient Documentation",
+        "Storage": "Secure Storage",
+        "Export": "Export Options"
+      },
+    
+    "Toggle": {
+      "ShowFeatures": "Features List",
+      "ReadMore": "Read More",
+      "ShowLess": "Show Less"
+    }
+  },
+
+
+  "Testimonials": {
+        "Title": "Customer Feedback on Our PPAP Services",
+        "Quote1": "PPAP always seemed complicated to me, but this service simplified everything. I felt confident submitting the documents knowing they were checked and complete.",
+        "Quote2": "This was my first time handling a PPAP submission, and I was lost at first. The guidance and templates provided made the whole process straightforward and stress-free.",
+        "Quote3": "The team demonstrated thorough expertise and guided us seamlessly through every stage of the PPAP requirements, ensuring compliance and accuracy."
+  },
+
+
+   "Contact": {
+  "Title": "Get in touch and ",
+  "highlight" : "schedule your demo now!",
+  "BookDemo": "Book A Demo",
+  "code": "IN",
+  "Form": {
+    "Name": "Name",
+    "Company": "Company Name",
+    "Email": "Business Email",
+    "Phone": "Mobile Number",
+    "Location": "Location",
+    "Product": "Product Interested",
+    "Queries": "Queries",
+    "Submit": "Send",
+    "Submitting": "Sending...",
+    "EmailError": "Please enter a valid email address.",
+    "PhoneError": "Please enter a valid phone number."
+  },
+  "ContactInfo": {
+    "Title": "Contact Information",
+    "EmailUs": "Email Us",
+    "CallUs": "Call Us",
+    "Hours": "Mon-Sat from 10am to 6:30pm",
+    "VisitUs": "Visit Us",
+    "Address": "#306, 2nd Floor NSIC - Software Technology Business Park, B 24, Guindy Industrial Estate, Ekkatuthangal, Chennai - 600032"
+  },
+  "Messages": {
+    "Success": "Your message has been sent successfully!",
+    "Failure": "There was an issue sending your message. Please try again later.",
+    "ValidationUnavailable": "Email validation service unavailable."
+  }
+},
+
+"Footer": {
+  "Description": "Ace PPAP streamlines your PPAP process with centralized, up-to-date documents, built-in compliance, and improved team accountability helping you save time and get faster approvals.",
+   "QuickLinks": { "Title": "Quick Links", "Features": "Features", "Clients": "Clients", "Pricing": "Pricing", "Contact": "Contact" }, 
+   "FollowUs": { "Title": "Follow Us" } }
+}

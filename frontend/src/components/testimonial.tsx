@@ -2,26 +2,34 @@
 
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
-const testimonials = [
+
+export default function TestimonialCarousel() {
+
+const t = useTranslations('Testimonials')
+
+
+  const testimonials = [
   {
     id: 1,
     name: 'Karthik',
-    quote: 'PPAP always seemed complicated to me, but this service simplified everything. I felt confident submitting the documents knowing they were checked and complete.',
+    quote: t('Quote1'),
   },
   {
     id: 2,
     name: 'Priya',
-    quote: 'This was my first time handling a PPAP submission, and I was lost at first. The guidance and templates provided made the whole process straightforward and stress-free.',
+    quote: t('Quote2'),
   },
   {
     id: 3,
     name: 'Rajesh Kumar',
-    quote: 'The team demonstrated thorough expertise and guided us seamlessly through every stage of the PPAP requirements, ensuring compliance and accuracy.',
+    quote: t('Quote3'),
   },
 ];
 
-export default function TestimonialCarousel() {
+  
+
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -48,7 +56,7 @@ export default function TestimonialCarousel() {
   return (
     <div className='bg-[#155E95] py-10 mt-10 px-2 md:px-10'>
       <h1 className='text-center text-xl md:text-3xl font-bold pb-5 text-white'>
-        Customer Feedback on <br  className='md:hidden'/> Our PPAP Services
+      {t('Title')} 
       </h1>
 
       <div

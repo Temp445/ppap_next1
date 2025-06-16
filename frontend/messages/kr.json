@@ -1,0 +1,184 @@
+{
+  "Menu": {
+    "Project": "Project",
+    "ProjectTooltip": "프로젝트를 간소화하고 팀에 힘을.",
+    "CRM": "CRM",
+    "CRMTooltip": "고객을 파악하고 비즈니스를 성장.",
+    "CMS": "CMS",
+    "CMSTooltip": "교정 자동화. 정확성 확보.",
+    "AllProducts": "모든 제품"
+  },
+  "Navbar": {
+    "Links": {
+      "Home": "홈",
+      "Features": "기능",
+      "Pricing": "가격",
+      "BookDemo": "데모 예약",
+      "Clients": "고객",
+      "Contact": "문의하기",
+      "SignIn": "로그인",
+      "AllProducts": "모든 제품"
+    }
+  },
+  "Hero": {
+    "Title": "고품질, 규정 준수 제조를 위한 생산 부품 승인 프로세스(PPAP) 서비스",
+    "Subtitle": "업계 선도 소프트웨어로 PPAP 워크플로 자동화 — 매번 더 빠르게 품질 제공",
+    "List": {
+      "DesignRecords": "설계 기록",
+      "FMEA": "공정 FMEA",
+      "ControlPlans": "관리 계획",
+      "MSA": "MSA 연구",
+      "Flow": "공정 흐름",
+      "PSW": "PSW"
+    },
+    "Button": "데모 예약",
+    "watchDemo": "데모 보기"
+  },
+  "WhyChoose": {
+    "Title": "란 무엇인가",
+    "Para": "<ppap>{ppap}</ppap>는 자동차 및 항공우주 산업을 포함한 제조업에서 사용하는 표준화된 프로세스로, 공급자가 고객의 엔지니어링, 품질, 규격 요구사항을 지속적으로 충족하는 부품을 생산할 수 있음을 보장합니다.",
+    "heading": "선택 이유",
+    "description1": "는 PPAP 관리를 위한 올인원 소프트웨어로, 제조업체와 공급자가 18개의 PPAP 요소를 신속, 정확, 준수하여 자동 제출할 수 있습니다.",
+      "description2": "다음을 위해 설계됨:",
+  "highlight": "자동차, 항공우주 및 산업 부문",
+  "description3": "중앙 집중식 감사 준비 플랫폼에서 전체 PPAP 수명 주기를 간소화합니다.",
+    "points": {
+      "storage": "안전한 문서 저장",
+      "paperwork": "수동 문서 업무 감소",
+      "compliance": "감사 대비 준수",
+      "submissions": "더 빠른 PPAP 제출"
+    },
+    "cta": "No.1 PPAP 소프트웨어 체험 — 지금 데모 예약하세요!",
+    "clients": "주요 고객이 신뢰"
+  },
+  "Advantage": {
+    "title": "의 이점",
+    "point1": "포괄적이고 완전히 통합된 PPAP 관리 시스템",
+    "point2": "중복 작업 제거로 시간과 노력 절약",
+    "point3": "제출 또는 감사에 항상 준비된 문서",
+    "point4": "팀의 책임감과 주인의식 향상",
+    "point5": "정보가 중앙 집중화되어 개개인에 의존하지 않음",
+    "point6": "PPAP 문서를 지속적으로 업데이트하는 혁신적인 플랫폼",
+    "point7": "항상 최신 PPAP 표준 및 ISO/TS 16949 준수"
+  },
+  "Feature": {
+    "Title": "의 핵심 기능",
+    "button": {
+      "readMore": "더 읽기",
+      "showLess": "간략히"
+    },
+    "items": [
+      { "number": 1, "title": "설계 기록", "description": "설계 책임에 따라 AIE 또는 공급자가 제공한 완전한 설계 도면." },
+      { "number": 2, "title": "엔지니어링 변경 문서", "description": "제품 또는 설계 변경을 설명하는 공식 문서(ECN 등)." },
+      { "number": 3, "title": "고객 엔지니어링 승인", "description": "PPAP 전 AIE의 엔지니어링 시험 및 승인, 일반적으로 임시 편차 및 샘플 시험 통해 수행." },
+      { "number": 4, "title": "설계 FMEA", "description": "설계 실패 가능 모드 및 영향을 위험 분석, AIE와 공급자 모두 승인." },
+      { "number": 5, "title": "공정 흐름", "description": "품질 검사 및 불량품 관리를 포함한 제조 공정 전체의 상세 시각화." },
+      { "number": 6, "title": "공정 FMEA", "description": "생산 중 잠재 실패 모드를 평가하고 고위험 이슈에 대한 시정 계획 작성." },
+      { "number": 7, "title": "관리 계획", "description": "생산 각 단계별 품질 관리 조치를 정의 및 문서화." },
+      { "number": 8, "title": "MSA 연구", "description": "중요 측정 장비에 대한 Gage R&R 연구 수행 및 교정 기록 유지." },
+      { "number": 9, "title": "치수 결과", "description": "모든 특성에 대해 실제 측정값 및 결과를 공기도(풍선도)에 기록." },
+      { "number": 10, "title": "자재 및 성능 시험 결과", "description": "DVP&R 문서, 시험 결과 및 자재 인증서를 저장." },
+      { "number": 11, "title": "초기 공정 연구", "description": "공정 안정성을 나타내는 SPC 차트 및 능력 지수 생성." },
+      { "number": 12, "title": "자격 실험실 문서", "description": "모든 외부 시험 결과에 대한 공인 실험실 인증서 첨부." },
+      { "number": 13, "title": "외관 승인 보고서 (AAR)", "description": "AAI 양식, 표면 시험 및 부품 외관 확인 제출." },
+      { "number": 14, "title": "샘플 제품", "description": "초기 생산에서 물리적 샘플 제출 및 추적 관리." },
+      { "number": 15, "title": "마스터 샘플", "description": "최종 승인된 샘플을 오퍼레이터 훈련 및 향후 참조를 위해 기록 및 저장." },
+      { "number": 16, "title": "검사 보조 도구", "description": "특별 검사 도구용 이미지, 교정 데이터 및 치수 보고서 업로드." },
+      { "number": 17, "title": "고객 맞춤 요구 준수", "description": "AIE의 특정 시험 및 검증 기준 준수를 확인하는 문서." },
+      { "number": 18, "title": "PSW", "description": "제출된 모든 문서 및 승인을 요약하는 PSW 자동 생성." }
+    ]
+  },
+  "Demo": {
+    "heading": "PPAP 프로세스 간소화 방법 알아보기",
+    "button": "지금 데모 예약!"
+  },
+  "Pricing": {
+    "Title": "구독 옵션",
+    "Subtitle": "적절한 솔루션으로 스마트하게 성장하세요",
+    "Yearly": "연간",
+    "Custompricing": "맞춤 가격",
+    "Plans": {
+      "name1": "기본",
+      "desc1": "PPAP 초보자에게 적합",
+      "button1": "지금 가입",
+      "name2": "표준",
+      "desc2": "PPAP 사용자에게 최고의 선택",
+      "tag2": "현명한 선택",
+      "name3": "프로",
+      "desc3": "PPAP 전문가를 위한 최적",
+      "tag3": "최고 레벨",
+      "name4": "엔터프라이즈",
+      "desc4": "기업을 위한 맞춤 솔루션",
+      "button4": "문의하기",
+      "tag4": "맞춤 플랜",
+      "Enterprisefeatures": [
+        "프로 기능 및 맞춤 옵션 제공",
+        "정확한 요구에 맞게 커스터마이징 가능",
+        "필요에 맞는 솔루션 상담"
+      ]
+    },
+    "FeaturesTitle": "주요 기능:",
+    "Features": {
+      "EssentialNote": "최대 10",
+      "BasicPlusNote": "최대 25",
+      "premiumNote": "최대 50",
+      "enterpriseNote": "무제한",
+      "Limit": "PPAP 한도",
+      "Upto2": "월 2회 제출 가능",
+      "Upto20": "유효 기간 내 20회 제출 가능",
+      "Upto50": "유효 기간 내 50회 제출 가능",
+      "Download": "기본 문서 다운로드",
+      "Documentation": "효율적 문서화",
+      "Storage": "안전한 저장",
+      "Export": "내보내기 옵션"
+    },
+    "Toggle": {
+      "ShowFeatures": "기능 목록",
+      "ReadMore": "더 읽기",
+      "ShowLess": "간략히 보기"
+    }
+  },
+  "Testimonials": {
+    "Title": "저희 PPAP 서비스에 대한 고객 피드백",
+    "Quote1": "PPAP는 항상 복잡하다고 생각했지만 이 서비스 덕분에 모든 것이 간단해졌습니다. 문서가 점검되고 완전하다는 확신을 가지고 제출할 수 있었습니다.",
+    "Quote2": "저에게 첫 PPAP 제출이었고, 처음에는 혼란스러웠습니다. 제공된 가이드와 템플릿이 전체 프로세스를 명확하고 스트레스 없이 만들어 주었습니다.",
+    "Quote3": "팀은 풍부한 전문성을 보였으며, PPAP 요구 단계마다 저희를 원활하게 안내하여 규정 준수와 정확성을 보장했습니다."
+  },
+  "Contact": {
+    "Title": "지금 문의하시고 ",
+    "highlight": "데모를 예약하세요!",
+      "BookDemo": "데모 예약",
+    "code": "KR",
+    "Form": {
+      "Name": "이름",
+      "Company": "회사명",
+      "Email": "업무용 이메일",
+      "Phone": "휴대전화 번호",
+      "Location": "지역",
+      "Product": "관심 제품",
+      "Queries": "문의사항",
+      "Submit": "보내기",
+      "Submitting": "보내는 중...",
+      "EmailError": "유효한 이메일 주소를 입력하세요.",
+      "PhoneError": "유효한 전화번호를 입력하세요."
+    },
+    "ContactInfo": {
+      "Title": "연락처 정보",
+      "EmailUs": "이메일 문의",
+      "CallUs": "전화 문의",
+      "Hours": "월~토 오전 10시 ~ 오후 6시 30분",
+      "VisitUs": "방문 주소",
+      "Address": "#306, 2층 NSIC - 소프트웨어 기술 비즈니스 파크, B 24, Guindy 산업단지, Ekkatuthangal, Chennai - 600032"
+    },
+    "Messages": {
+      "Success": "메시지가 성공적으로 전송되었습니다!",
+      "Failure": "메시지 전송 중 문제가 발생했습니다. 나중에 다시 시도해주세요.",
+      "ValidationUnavailable": "이메일 검증 서비스를 사용할 수 없습니다."
+    }
+  },
+  "Footer": {
+    "Description": "Ace PPAP는 문서를 중앙 집중화하고 실시간 업데이트하여, 내장 규정 준수 및 팀 책임 강화를 통해 PPAP 프로세스를 간소화 — 시간을 절약하고 승인 속도를 높입니다.",
+    "QuickLinks": { "Title": "빠른 링크", "Features": "기능", "Clients": "고객", "Pricing": "가격", "Contact": "문의하기" },
+    "FollowUs": { "Title": "팔로우" }
+  }
+}

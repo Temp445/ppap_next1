@@ -34,6 +34,8 @@ import img27 from "../assets/ClientImages/image-27.png";
 import img28 from "../assets/ClientImages/image-28.png";
 import img29 from "../assets/ClientImages/image-29.png";
 
+import { useTranslations } from "next-intl";
+
 const Clients: React.FC = () => {
   const logos: StaticImageData[] = [
     img0, img1, img2, img3, img4, img5, img6, img7, img8, img9,
@@ -46,10 +48,12 @@ const Clients: React.FC = () => {
   const firstHalf = logos.slice(0, half);
   const secondHalf = logos.slice(half);
 
+  const t = useTranslations('WhyChoose')
+
   return (
     <div className="mt-10  z-0 " id="client">
         <h1 className="text-center text-2xl md:text-4xl font-bold md:mb-5  text-[#102E50]">
-       Trusted by Leading Clients
+       {t('clients')}
       </h1>
 
       <div className="">
