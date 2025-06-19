@@ -28,30 +28,25 @@ const t = useTranslations('Testimonials')
   },
 ];
 
-  
-
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+    const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
-  const nextTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-  };
-
   const prevTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+    setCurrentTestimonial((prev) =>
+      prev === 0 ? testimonials.length - 1 : prev - 1
+    );
   };
 
   useEffect(() => {
     if (isHovered) return;
 
     const interval = setInterval(() => {
-      nextTestimonial();
+      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
     }, 4000);
 
     return () => clearInterval(interval);
-  }, [isHovered]);
-
-  const { name,quote } = testimonials[currentTestimonial];
+  }, [isHovered, testimonials.length]);
+  const { name, quote  } = testimonials[currentTestimonial];
 
   return (
     <div className='bg-[#155E95] py-10 mt-10 px-2 md:px-10'>
@@ -72,7 +67,9 @@ const t = useTranslations('Testimonials')
             <ChevronLeft className="w-6 h-6 text-gray-600" />
           </button>
           <button 
-            onClick={nextTestimonial} 
+            onClick={() =>
+              setCurrentTestimonial(
+                (prev) => (prev + 1) % testimonials.length )}
             className="absolute right-0 top-1/2 transform -translate-y-1/2 hidden md:block  hover:bg-gray-200 rounded-full md:p-2"
           >
             <ChevronRight className="w-6 h-6 text-gray-600" />

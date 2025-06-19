@@ -1,6 +1,6 @@
 "use client";
 
-import React, { ChangeEvent, FormEvent, useRef, useState } from "react";
+import React, { FormEvent, useRef, useState } from "react";
 import { SendHorizontal, Mails, PhoneCall, MapPinned } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
@@ -49,13 +49,6 @@ const Contact: React.FC = () => {
     }
   };
 
-  const handleEmailChange = async (e: ChangeEvent<HTMLInputElement>) => {
-    const emailInput = e.target.value.trim();
-    setEmail(emailInput);
-    const error = await validateEmail(emailInput);
-    setEmailError(error);
-  };
-
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     event.stopPropagation();
@@ -79,13 +72,13 @@ const Contact: React.FC = () => {
     }
 
     const formData = {
-      name: (formCurrent['Name'] as HTMLInputElement)?.value || '',
-      company: formCurrent['company']?.value || '',
-      email,
-      number: phone,
-      product: formCurrent['product']?.value || '',
-      location: formCurrent['location']?.value || '',
-      queries: formCurrent['queries']?.value || '',
+      Full_Name: (formCurrent['Name'] as HTMLInputElement)?.value || '',
+      Company_Name: formCurrent['company']?.value || '',
+      Business_Email:email,
+      Mobile_Number: phone,
+      Product_Interested: formCurrent['product']?.value || '',
+      Location: formCurrent['location']?.value || '',
+      Message: formCurrent['queries']?.value || '',
     };
 
     setLoading(true);
@@ -109,12 +102,12 @@ const Contact: React.FC = () => {
       await sendWhatsappMessage(
         'enquiry_ace_ppap',
         {
-          fullName: formData.name,
-          companyName: formData.company,
-          businessEmail: formData.email,
+          fullName: formData.Full_Name,
+          companyName: formData.Company_Name,
+          businessEmail: formData.Business_Email,
           mobileNumber: phoneWithoutPlus,
-          location: formData.location,
-          message: formData.queries,
+          location: formData.Location,
+          message: formData.Message,
         },
         adminPhones,
       );
@@ -122,8 +115,8 @@ const Contact: React.FC = () => {
       await sendWhatsappMessage(
         'customer_greetings',
         {
-          fullName: formData.name,
-          product: formData.product,
+          fullName: formData.Full_Name,
+          product: formData.Product_Interested,
           siteUrl: 'https://acesoft.in',
           imageUrl:
             'https://res.cloudinary.com/dohyevc59/image/upload/v1749124753/Enquiry_Greetings_royzcm.jpg',
@@ -164,7 +157,7 @@ const Contact: React.FC = () => {
                   value={email}
                   required
                   placeholder={`${t('Form.Email')} *`}
-                  onChange={handleEmailChange}
+                  onChange={(e) => setEmail(e.target.value.trim())} 
                   className="text-sm md:text-[16px] border p-2 mt-1 rounded w-full"
                 />
                 {emailError && (

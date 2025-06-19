@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, ChangeEvent, FormEvent } from 'react';
+import React, { useState, useRef, FormEvent } from 'react';
 import {
   Send, User, Mail, MapPin, MessageSquare, Building2
 } from 'lucide-react';
@@ -48,12 +48,6 @@ export default function EnquiryForm() {
     }
   };
 
-  const handleEmailChange = async (e: ChangeEvent<HTMLInputElement>) => {
-    const emailInput = e.target.value.trim();
-    setEmail(emailInput);
-    const error = await validateEmail(emailInput);
-    setEmailError(error);
-  };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -78,13 +72,13 @@ export default function EnquiryForm() {
     }
 
     const formData = {
-      name: (formCurrent['Name'] as HTMLInputElement)?.value || '',
-      company: formCurrent['company']?.value || '',
-      email,
-      number: phone,
-      location: formCurrent['location']?.value || '',
-      queries: formCurrent['queries']?.value || '',
-      product: formCurrent['product']?.value || '',
+      Full_Name: (formCurrent['Name'] as HTMLInputElement)?.value || '',
+      Company_Name: formCurrent['company']?.value || '',
+      Business_Email: email,
+      Mobile_Number: phone,
+      Location: formCurrent['location']?.value || '',
+      Message: formCurrent['queries']?.value || '',
+      Product_Interested: formCurrent['product']?.value || '',
     };
 
     setLoading(true);
@@ -108,12 +102,12 @@ export default function EnquiryForm() {
       await sendWhatsappMessage(
         'enquiry_ace_ppap',
         {
-          fullName: formData.name,
-          companyName: formData.company,
-          businessEmail: formData.email,
+          fullName: formData.Full_Name,
+          companyName: formData.Company_Name,
+          businessEmail: formData.Business_Email,
           mobileNumber: phoneWithoutPlus,
-          location: formData.location,
-          message: formData.queries,
+          location: formData.Location,
+          message: formData.Message,
         },
         adminPhones,
       );
@@ -121,8 +115,8 @@ export default function EnquiryForm() {
       await sendWhatsappMessage(
         'customer_greetings',
         {
-          fullName: formData.name,
-          product: formData.product,
+          fullName: formData.Full_Name,
+          product: formData.Product_Interested,
           siteUrl: 'https://acesoft.in',
           imageUrl:
             'https://res.cloudinary.com/dohyevc59/image/upload/v1749124753/Enquiry_Greetings_royzcm.jpg',
@@ -192,7 +186,7 @@ export default function EnquiryForm() {
                   type="email"
                   name="email"
                   value={email}
-                  onChange={handleEmailChange}
+                  onChange={(e) => setEmail(e.target.value.trim())}
                   placeholder={`${t('Form.Email')}`}
                   required
                   className={`w-full pl-12 pr-4 py-4 bg-white/10 border ${
