@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./Navbar";
-import logo from "../assets/AceLogo.png";
-import img1 from "../assets/PPAP3.jpg";
-import img2 from "../assets/PPAP1.jpg";
-import img3 from "../assets/PPAP2.jpg";
-import img4 from "../assets/PPAP5.jpg";
+import logo from "@/assets/AceLogo.png";
+import img1 from "@/assets/PPAP3.jpg";
+import img2 from "@/assets/PPAP1.jpg";
+import img3 from "@/assets/PPAP2.jpg";
+import img4 from "@/assets/PPAP5.jpg";
 import DemoButton from "./DemoButton";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
