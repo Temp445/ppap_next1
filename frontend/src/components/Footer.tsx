@@ -1,6 +1,7 @@
 
 import Image from 'next/image';
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo.svg';
+import Link from 'next/link'
 import { useTranslations } from 'next-intl';
 const Footer = () => {
   const t = useTranslations('Footer')
@@ -22,10 +23,10 @@ const Footer = () => {
               <div>
             <h4 className="text-lg font-semibold text-white">{t('QuickLinks.Title')}</h4>
             <ul className="mt-2 space-y-2 text-sm">
-              <li><a href="#features" className="hover:text-orange-400">{t('QuickLinks.Features')}</a></li>
-              <li><a href="#client" className="hover:text-orange-400">{t('QuickLinks.Clients')}</a></li>
-              <li><a href="#pricing" className="hover:text-orange-400">{t('QuickLinks.Pricing')}</a></li>
-              <li><a href="#contact" className="hover:text-orange-400">{t('QuickLinks.Contact')}</a></li>
+              <li><Link href="/#features" className="hover:text-orange-400">{t('QuickLinks.Features')}</Link></li>
+              <li><Link href="/#client" className="hover:text-orange-400">{t('QuickLinks.Clients')}</Link></li>
+              <li><Link href="/#pricing" className="hover:text-orange-400">{t('QuickLinks.Pricing')}</Link></li>
+              <li><Link href="/#contact" className="hover:text-orange-400">{t('QuickLinks.Contact')}</Link></li>
 
             </ul>
           </div>

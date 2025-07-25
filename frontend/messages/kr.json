@@ -32,7 +32,8 @@
       "PSW": "PSW"
     },
     "Button": "데모 예약",
-    "watchDemo": "데모 보기"
+    "watchDemo": "데모 보기",
+    "BookADemo": "지금 무료 데모 예약하기!"
   },
   "WhyChoose": {
     "Title": "란 무엇인가",
@@ -183,5 +184,25 @@
     "Description": "Ace PPAP는 문서를 중앙 집중화하고 실시간 업데이트하여, 내장 규정 준수 및 팀 책임 강화를 통해 PPAP 프로세스를 간소화 — 시간을 절약하고 승인 속도를 높입니다.",
     "QuickLinks": { "Title": "빠른 링크", "Features": "기능", "Clients": "고객", "Pricing": "가격", "Contact": "문의하기" },
     "FollowUs": { "Title": "팔로우" }
-  }
+  },
+    "Notification": {
+  "Demo": "데모 예약하기",
+  "contact": "문의하기",
+  "para": "양식을 작성해 주시면 자격을 갖춘 제품 전문가가 곧 연락드려 귀하의 요구 사항을 파악하고 비즈니스에 가장 적합한 솔루션을 제안해 드립니다.",
+  "write": "다음 주소로 이메일을 보내주셔도 됩니다:"
+},
+"CallbackCard": {
+  "Heading": "원하는 것을 찾는 데 도움이 필요하신가요?",
+  "highlight": "적절한 제품",
+  "Subtitle": "질문이나 제품 관련 요청이 있으신가요? 저희가 도와드리겠습니다.",
+  "contact": "문의하기",
+  "phone": "전화",
+  "email": "이메일",
+  "Title": "가장 인기 있는 제품",
+  "feature1": "교정 관리 시스템",
+  "feature2": "고객 관계 관리",
+  "tagline1": "신뢰할 수 있는 교정 관리로 생산성을 향상하세요.",
+  "tagline2": "고객을 이해하고 신뢰를 쌓아 비즈니스를 성장시키세요.",
+  "LearnMore": "자세히 보기"
+}
 }

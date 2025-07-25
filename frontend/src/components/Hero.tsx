@@ -16,7 +16,7 @@ const locale = useLocale();
   const t = useTranslations('Hero')
 
   const size = {
-    ru: ' lg:text-2xl xl:text-3xl 2xl:text-4xl',
+    ru: ' lg:text-2xl xl:text-3xl 2xl:text-3xl',
   }[locale] || 'lg:text-4xl xl:text-4xl 2xl:text-5xl';
 
   return (
@@ -40,7 +40,7 @@ const locale = useLocale();
             </span>
           </div>
 
-          <section className="flex flex-col lg:flex-row items-center xl:max-w-11/12 mx-auto justify-between min-h-fit 2xl:pb-10  gap-12 lg:gap-8 xl:mt-10">
+          <section className="flex flex-col lg:flex-row  xl:max-w-11/12 mx-auto justify-between min-h-fit 2xl:pb-10  gap-12 lg:gap-8 xl:mt-10">
             <div className="relative w-full  order-1 lg:order-2">
               <div className="relative  mx-auto lg:mx-0">
                 <div className="absolute -inset-8 rounded-3xl blur-2xl" />
@@ -135,7 +135,7 @@ const locale = useLocale();
                 </div>
                 <div className="md:pt-4 flex gap-5 mx-auto justify-center md:justify-center lg:justify-start">
                   <Link
-                    href="#contact"
+                    href="/BookDemo"
                     className="group inline-flex items-center gap-3 px-4  py-2 md:py-3  hover:bg-orange-600  border hover:border-orange-600 text-white text-sm md:text-lg font-bold rounded  shadow-xl hover:shadow-2xl"
                   >
                     <span>{t('Button')}</span>

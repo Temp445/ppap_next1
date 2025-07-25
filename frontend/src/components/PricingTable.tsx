@@ -138,7 +138,7 @@ const PricingTable: React.FC = () => {
                 </span>
               </div>
             )}
-            <div className="p-6 lg:p-4 xl:p-8 flex flex-col h-full">
+            <div className="p-6 lg:p-4 xl:p-6 flex flex-col h-full">
               <h2 className="text-xl md:text-2xl font-bold text-[#102E50] mb-2">{plan.displayname}</h2>
               <p className="text-gray-600 mb-4">{plan.desc}</p>
 

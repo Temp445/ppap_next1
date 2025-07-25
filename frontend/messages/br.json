@@ -32,7 +32,8 @@
       "PSW": "PSW"
     },
     "Button": "Agendar demo",
-    "watchDemo": "Ver demo"
+    "watchDemo": "Ver demo",
+    "BookADemo": "Agende uma Demonstração Grátis Agora!"
   },
   "WhyChoose": {
     "Title": "O que é",
@@ -191,5 +192,27 @@
     "FollowUs": {
       "Title": "Siga‑nos"
     }
-  }
+  },
+
+ "Notification": {
+  "Demo": "Agendar demo",
+  "contact": "Fale conosco",
+  "para": "Por favor, preencha o formulário e um especialista qualificado entrará em contato em breve para entender suas necessidades e recomendar a solução mais adequada para o seu negócio.",
+  "write": "Você também pode nos escrever em:"
+},
+
+"CallbackCard": {
+  "Heading": "Precisa de ajuda para encontrar o que procura?",
+  "highlight": "produto certo",
+  "Subtitle": "Tem dúvidas ou precisa de um produto? Estamos prontos para ajudar.",
+  "contact": "Fale conosco",
+  "phone": "Telefone",
+  "email": "Email",
+  "Title": "Produtos Mais Populares",
+  "feature1": "Sistema de Gestão de Calibração",
+  "feature2": "Gestão de Relacionamento com Clientes",
+  "tagline1": "Aumente a produtividade com uma gestão de calibração confiável.",
+  "tagline2": "Conheça seus clientes. Construa confiança. Faça seu negócio crescer.",
+  "LearnMore": "Saiba mais"
+}
 }

@@ -32,7 +32,8 @@
       "PSW": "PSW"
     },
     "Button": "预约演示",
-    "watchDemo": "观看演示"
+    "watchDemo": "观看演示",
+    "BookADemo": "立即预约免费演示！"
   },
   "WhyChoose": {
     "Title": "什么是",
@@ -184,5 +185,25 @@
     "Description": "Ace PPAP通过集中、实时更新文档、内置合规性及增强团队责任感，简化您的PPAP流程——节省时间，快速获批。",
     "QuickLinks": { "Title": "快速链接", "Features": "功能", "Clients": "客户", "Pricing": "价格", "Contact": "联系我们" },
     "FollowUs": { "Title": "关注我们" }
-  }
+  },
+  "Notification": {
+  "Demo": "预约演示",
+  "contact": "联系我们",
+  "para": "请填写表单，我们的专业产品顾问将尽快与您联系，了解您的需求，并为您的企业推荐最合适的解决方案。",
+  "write": "您也可以写信给我们："
+},
+"CallbackCard": {
+  "Heading": "需要帮助找到合适的产品吗？",
+  "highlight": "合适的产品",
+  "Subtitle": "有任何问题或产品需求？我们很乐意为您提供帮助。",
+  "contact": "联系我们",
+  "phone": "电话",
+  "email": "邮箱",
+  "Title": "最受欢迎的产品",
+  "feature1": "校准管理系统",
+  "feature2": "客户关系管理",
+  "tagline1": "通过可靠的校准管理提高生产力。",
+  "tagline2": "了解客户，建立信任，发展业务。",
+  "LearnMore": "了解更多"
+}
 }

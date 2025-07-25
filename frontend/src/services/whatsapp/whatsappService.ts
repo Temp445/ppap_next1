@@ -1,25 +1,31 @@
 import { generateWhatsAppPayload } from "./templates/payloadGenerator";
-import { getTemplateRegistry } from './templates/templateRgistry';
+import { templateRegistry, TemplateId, TemplatePayloadMap, isTemplateId } from './templates/templateRgistry';
 
-export async function sendWhatsappMessage<T>(
-    templateId: string,
-    templateData: T,
-    phoneNumbers: string[]
+export async function sendWhatsappMessage<K extends TemplateId>(
+    templateId: K,
+    templateData: TemplatePayloadMap[K],
+    phone?: string
 ): Promise<void> {
 
-    if (!templateId || !templateData || !Array.isArray(phoneNumbers) || phoneNumbers.length === 0) {
+    if (!templateId || !templateData) {
         console.error("Invalid parameters for sending WhatsApp message.");
         return;
     }
 
-    const stromxToken = process.env.NEXT_PUBLIC_STROMX_TOKEN;
-    if (!stromxToken) {
-        console.warn("Stromx token is not set. Cannot send WhatsApp message.");
-        return;
+    if (!isTemplateId(templateId)) {
+        throw new Error(`Unknown template ID: ${templateId}`);
     }
 
-    const registry = getTemplateRegistry();
-    const meta = registry[templateId];
+    const meta = templateRegistry[templateId]; // ✅ Type is TemplateMeta<TemplatePayloadMap[typeof templateId]>
+
+    // Now check type compatibility manually
+    const result = meta.schema.safeParse(templateData);
+
+    if (!result.success) {
+        throw new Error(
+            `Invalid template data: ${JSON.stringify(result.error.format(), null, 2)}`
+        );
+    }
 
     if (meta && meta.schema) {
         const result = meta.schema.safeParse(templateData);
@@ -36,26 +42,23 @@ export async function sendWhatsappMessage<T>(
     // Generate the WhatsApp message payload
     const messagePayload = generateWhatsAppPayload(meta, templateData);
 
-    for (const phone of phoneNumbers) {
-        try {
-            const response = await fetch(
-                `https://api.stromx.io/v1/message/send-message?token=${stromxToken}`,
-                {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ ...messagePayload, to: phone })
-                }
-            );
-            const data = await response.json();
+    const endpoint = process.env.NEXT_PUBLIC_WHATSAPP_API_URL ?? '/api/send-whatsapp';
 
-            if (response.ok) {
-                console.log(`WhatsApp sent to ${phone}:`, data);
-            } else {
-                console.error(`WhatsApp failed for ${phone}:`, data);
-            }
-        } catch (error) {
-            console.error(`WhatsApp error for ${phone}:`, error);
+    try {
+        const response = await fetch(endpoint, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ data: messagePayload, to: phone })
+        });
+        const data = await response.json();
+
+        if (response.ok) {
+            console.log(`WhatsApp sent to ${phone}:`, data);
+        } else {
+            console.error(`WhatsApp failed for ${phone}:`, data);
         }
+    } catch (error) {
+        console.error(`WhatsApp error for ${phone}:`, error);
     }
 
     // Proceed to send the message using templateId and validated data

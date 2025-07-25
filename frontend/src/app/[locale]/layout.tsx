@@ -5,6 +5,15 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import "../globals.css";
 import 'swiper/css';
+import { PageTracker } from "@/components/PageTracker";
+import LinkedInTracker from '@/components/LinkedInTracker';
+
+
+const GoogleAdID = process.env.NEXT_PUBLIC_GA_ADS_CONVERSION_ID;
+const GoogleAnalyticsID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
+const linkedInPartnerId = process.env.NEXT_PUBLIC_LI_PARTNER_ID!;
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +49,13 @@ export default async function RootLayout({
     notFound();
   }
 
+   // Ensure Google Ads and Analytics IDs are set  
+  if (!GoogleAdID || !GoogleAnalyticsID) {
+    console.error(
+      "❌ Missing Google Ads or Analytics ID. Please set NEXT_PUBLIC_GA_ADS_CONVERSION_ID and NEXT_PUBLIC_GA_MEASUREMENT_ID in .env."
+    );
+  }
+
   return (
     <html lang={locale}>
        <head>
@@ -48,6 +64,12 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${urbanist.variable} antialiased`}
       >
+        {/* Google Analytics Tracker */}
+        <PageTracker />
+
+          {/* LinkedIn Tracker */}
+        <LinkedInTracker partnerId={linkedInPartnerId} />
+
      <NextIntlClientProvider> {children} </NextIntlClientProvider>
       </body>
     </html>

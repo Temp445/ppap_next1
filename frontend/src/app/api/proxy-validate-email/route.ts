@@ -1,35 +1,40 @@
-export const dynamic = 'force-dynamic';
+// app/api/proxy-validate-email/route.ts 
 
-export async function POST(req: Request) {
+import { NextRequest, NextResponse } from "next/server";
+import axios from "axios";
+
+export async function POST(req: NextRequest) {
   try {
     const { email } = await req.json();
 
-    const API_KEY = process.env.NEXT_PUBLIC_EMAIL_VALIDATION_API_KEY;
+    const API_KEY = process.env.EMAIL_VALIDATOR_SECRET!;
+    const VALIDATOR_URL = process.env.EMAIL_VALIDATOR_URL!;
 
-    if (!API_KEY) {
-      return new Response(
-        JSON.stringify({ message: "Missing API key" }),
+    if (!API_KEY || !VALIDATOR_URL) {
+      return new NextResponse(
+        JSON.stringify({ message: "Missing env variables" }),
         { status: 500, headers: { "Content-Type": "application/json" } }
       );
     }
 
-    const response = await fetch("https://validate.acesoftcloud.in/api/validate-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${API_KEY}`,
-      },
-      body: JSON.stringify({ email }),
-    });
+    const response = await axios.post(
+      VALIDATOR_URL,
+      { email },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${API_KEY}`,
+        },
+      }
+    );
 
-    const data = await response.json();
-
-    return new Response(JSON.stringify(data), {
-      status: response.status,
+    return new NextResponse(JSON.stringify(response.data), {
+      status: 200,
       headers: { "Content-Type": "application/json" },
     });
-  } catch {
-    return new Response(
+  } catch (error) {
+    console.error("Validation proxy error:", error);
+    return new NextResponse(
       JSON.stringify({ message: "Error calling validation API" }),
       { status: 500, headers: { "Content-Type": "application/json" } }
     );

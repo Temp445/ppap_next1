@@ -32,7 +32,8 @@
       "PSW": "PSW"
     },
     "Button": "Demander une démo",
-    "watchDemo": "Voir la démo"
+    "watchDemo": "Voir la démo",
+    "BookADemo": "Réservez une démo gratuite dès maintenant !"
   },
   "WhyChoose": {
     "Title": "Qu’est-ce que",
@@ -184,5 +185,26 @@
     "Description": "Ace PPAP rationalise votre processus PPAP avec des documents centralisés et à jour, conformité intégrée et meilleure responsabilisation des équipes : gagnez du temps et obtenez des approbations plus rapides.",
     "QuickLinks": { "Title": "Liens rapides", "Features": "Fonctionnalités", "Clients": "Clients", "Pricing": "Tarifs", "Contact": "Contact" },
     "FollowUs": { "Title": "Suivez-nous" }
-  }
+  },
+
+  "Notification": {
+  "Demo": "Réserver une démo",
+  "contact": "Contactez-nous",
+  "para": "Veuillez remplir le formulaire et un expert produit qualifié vous contactera sous peu afin de comprendre vos besoins et de vous recommander la solution la plus adaptée à votre entreprise.",
+  "write": "Vous pouvez également nous écrire à :"
+},
+"CallbackCard": {
+  "Heading": "Besoin d’aide pour trouver ce qu’il vous faut ?",
+  "highlight": "bon produit",
+  "Subtitle": "Des questions ou un besoin produit ? Nous sommes là pour vous aider.",
+  "contact": "Contactez-nous",
+  "phone": "Téléphone",
+  "email": "E-mail",
+  "Title": "Produits les plus populaires",
+  "feature1": "Système de gestion de l'étalonnage",
+  "feature2": "Gestion de la relation client",
+  "tagline1": "Améliorez la productivité avec une gestion fiable de l'étalonnage.",
+  "tagline2": "Connaissez vos clients. Créez la confiance. Développez votre activité.",
+  "LearnMore": "En savoir plus"
+}
 }

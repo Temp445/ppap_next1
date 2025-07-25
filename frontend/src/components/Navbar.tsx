@@ -28,13 +28,13 @@ const t = useTranslations('Navbar')
     <>
       <nav className="flex items-center justify-between md:pt-5 lg:pb-10 px-4 md:px-0 xl:px-6 relative">
         <div className="md:flex items-center hidden ">
-          <Link href="/" className="text-2xl md:text-xl lg:text-2xl xl:text-3xl font-bold text-white flex gap-1">
+          <Link href="/" className="text-2xl md:text-xl lg:text-2xl xl:text-2xl font-bold text-white flex gap-1">
             <Image
               src={logo}
               alt="logo"
               width={100}
               height={100}
-              className="w-12 h-12 md:w-10 md:h-10 lg:w-12 lg:h-12  "
+              className="w-12 h-12 md:w-10 md:h-10 "
             />
             <span className="mt-2">ACE PPAP </span>
           </Link>
@@ -55,7 +55,7 @@ const t = useTranslations('Navbar')
 
         <div className="hidden md:flex items-center space-x-2">
           <Link
-            href="#features"
+            href="/#features"
             className="flex items-center text-white hover:text-white text-base font-semibold relative px-4 py-2 rounded-full transition-all duration-300 ease-in-out hover:bg-orange-600"
           >
             <Star className="w-4 h-4 mr-2" />
@@ -63,7 +63,7 @@ const t = useTranslations('Navbar')
           </Link>
 
           <Link
-            href="#pricing"
+            href="/#pricing"
             className="flex items-center text-white hover:text-white text-base font-semibold relative px-4 py-2 rounded-full transition-all duration-300 ease-in-out hover:bg-orange-600"
           >
             <DollarSign className="w-4 h-4 mr-2" />
@@ -71,7 +71,7 @@ const t = useTranslations('Navbar')
           </Link>
 
           <Link
-            href="#contact"
+            href="/BookDemo"
             className="flex items-center text-white hover:text-white text-base font-semibold relative px-4 py-2 rounded-full transition-all duration-300 ease-in-out hover:bg-orange-600"
           >
             <FileText className="w-4 h-4 mr-2" />
@@ -79,7 +79,7 @@ const t = useTranslations('Navbar')
           </Link>
 
           <Link
-            href="#client"
+            href="/#client"
             className="flex items-center text-white hover:text-white text-base font-semibold relative px-4 py-2 rounded-full transition-all duration-300 ease-in-out hover:bg-orange-600"
           >
             <Users className="w-4 h-4 mr-2" />
@@ -99,7 +99,7 @@ const t = useTranslations('Navbar')
                 {t('Links.Home')}
               </Link>
               <Link
-                href="#features"
+                href="/#features"
                 onClick={() => setIsMenuOpen(false)}
                 className="flex items-center text-[#102E50] text-base font-semibold"
               >
@@ -108,7 +108,7 @@ const t = useTranslations('Navbar')
               </Link>
 
               <Link
-                href="#pricing"
+                href="/#pricing"
                 onClick={() => setIsMenuOpen(false)}
                 className="flex items-center text-[#102E50]  text-base font-semibold"
               >
@@ -117,7 +117,7 @@ const t = useTranslations('Navbar')
               </Link>
 
               <Link
-                href="#contact"
+                href="/#contact"
                 onClick={() => setIsMenuOpen(false)}
                 className="flex items-center text-[#102E50]  text-base font-semibold"
               >
@@ -126,7 +126,7 @@ const t = useTranslations('Navbar')
               </Link>
 
               <Link
-                href="#client"
+                href="/#client"
                 onClick={() => setIsMenuOpen(false)}
                 className="flex items-center text-[#102E50]  text-base font-semibold"
               >
@@ -139,8 +139,8 @@ const t = useTranslations('Navbar')
 
         <div className="hidden md:flex items-center space-x-4">
           <Link
-            href="https://webapp.acecms.in/"
-            className="hover:bg-green-700 hover hover:border-green-700 border text-white px-4 py-1 md:px-2 lg:px-6 xl:py-2 rounded-md font-medium hover:opacity-90 transition"
+            href="#"
+            className="hover:bg-green-700 hover hover:border-green-700 border text-white px-4 py-1 md:px-2 lg:px-4  rounded-md font-medium hover:opacity-90 transition"
           >
             {t('Links.SignIn')}
           </Link>
@@ -158,7 +158,7 @@ const t = useTranslations('Navbar')
         </button>
 
         <Link
-          href="https://webapp.acecms.in/"
+          href="#"
           className="flex flex-col items-center justify-center text-white w-full"
         >
           <span className="w-full h-12  bg-gradient-to-r from-red-500 to-red-400 flex items-center justify-center">
@@ -167,7 +167,7 @@ const t = useTranslations('Navbar')
         </Link>
 
         <Link
-          href="#contact"
+          href="/BookDemo"
           className="flex flex-col items-center justify-center text-gray-600"
         >
           <div className="w-12 h-12  bg-gradient-to-r from-blue-500 to-blue-400 flex items-center justify-center">

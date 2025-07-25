@@ -32,7 +32,8 @@
       "PSW": "PSW"
     },
     "Button": "Demo buchen",
-    "watchDemo": "Demo ansehen"
+    "watchDemo": "Demo ansehen",
+    "BookADemo": "Buche jetzt eine kostenlose Demo!"
   },
   "WhyChoose": {
     "Title": "Was ist",
@@ -185,5 +186,27 @@
     "Description": "Ace PPAP optimiert Ihren PPAP‑Prozess mit zentralisierten, stets aktuellen Dokumenten, integrierter Compliance und besserer Verantwortlichkeit im Team – sparen Sie Zeit und erhalten Sie schnellere Genehmigungen.",
     "QuickLinks": { "Title": "Schnelllinks", "Features": "Funktionen", "Clients": "Kunden", "Pricing": "Preise", "Contact": "Kontakt" },
     "FollowUs": { "Title": "Folgen Sie uns" }
-  }
+  },
+
+  "Notification": {
+  "Demo": "Demo buchen",
+  "contact": "Kontaktieren Sie uns",
+  "para": "Bitte füllen Sie das Formular aus, und ein qualifizierter Produktexperte wird Sie in Kürze kontaktieren, um Ihre Anforderungen zu verstehen und die geeignetste Lösung für Ihr Unternehmen zu empfehlen.",
+  "write": "Sie können uns auch schreiben an:"
+},
+
+"CallbackCard": {
+  "Heading": "Brauchen Sie Hilfe, das Richtige zu finden?",
+  "highlight": "das richtige Produkt",
+  "Subtitle": "Haben Sie Fragen oder benötigen Sie ein Produkt? Wir helfen Ihnen gerne weiter.",
+  "contact": "Kontaktieren Sie uns",
+  "phone": "Telefon",
+  "email": "E-Mail",
+  "Title": "Beliebteste Produkte",
+  "feature1": "Kalibrierungsmanagementsystem",
+  "feature2": "Kundenbeziehungsmanagement",
+  "tagline1": "Steigern Sie die Produktivität mit zuverlässigem Kalibrierungsmanagement.",
+  "tagline2": "Kennen Sie Ihre Kunden. Bauen Sie Vertrauen auf. Wachsen Sie Ihr Geschäft.",
+  "LearnMore": "Mehr erfahren"
+}
 }

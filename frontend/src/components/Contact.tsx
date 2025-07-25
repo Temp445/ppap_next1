@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { FormEvent, useRef, useState } from "react";
 import { SendHorizontal, Mails, PhoneCall, MapPinned } from "lucide-react";
@@ -11,12 +11,24 @@ import 'react-phone-number-input/style.css';
 import icon from "../assets/CF.jpg";
 import { useTranslations } from "next-intl";
 import { CountryCode } from 'libphonenumber-js';
+import { PageTracker } from "./PageTracker";
 
 const service_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
 const template_ID = process.env.NEXT_PUBLIC_EMAILJS_ENQ_TEMPLATE_ID!;
-const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-const adminPhones = process.env.NEXT_PUBLIC_ADMIN_PHONES?.split(',').map((p) => p.trim()) || [];
+const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
 
+
+const CONVERSION_LABEL = process.env.NEXT_PUBLIC_GA_ENQ_CONVERSION_LABEL!;
+if (!CONVERSION_LABEL) {
+  console.error('❌ Google Conversion Label missing. Set NEXT_PUBLIC_GA_ENQ_CONVERSION_LABEL in .env.');
+}
+
+const LI_ENQ_CONVERSION_LABEL = process.env.NEXT_PUBLIC_LI_ENQ_CONVERSION_ID!;
+if (!LI_ENQ_CONVERSION_LABEL) {
+  console.error('❌ LinkedIn Conversion Label missing. Set NEXT_PUBLIC_LI_ENQ_CONVERSION_ID in .env.');
+}
+
+const endpoint = '/api/proxy-validate-email';
 
 const Contact: React.FC = () => {
  
@@ -33,16 +45,20 @@ const Contact: React.FC = () => {
 
   const validateEmail = async (email: string): Promise<string> => {
     try {
-      const response = await fetch('/api/proxy-validate-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+       const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
       });
 
-        if (!response.ok) return t('Form.EmailError');
+    if (response.status !== 200) return t('Form.EmailError');
 
-      const result = await response.json();
-      return result.isValid ? '' : t('Form.EmailError');
+    const data = await response.json();
+      if (data.success) {
+        return data.isValid ? '' : t('Form.EmailError');
+      } else {
+        return (` Failed: ${data.error}`);
+      }
     } catch (err) {
       console.error('Email validation error:', err);
       return t('Messages.ValidationUnavailable');
@@ -70,15 +86,32 @@ const Contact: React.FC = () => {
     } else {
       setPhoneError('');
     }
+    
+   // Trigger LinkedIn Conversion
+    if (typeof window !== 'undefined' && window.lintrk) {
+      window.lintrk('track', { conversion_id: LI_ENQ_CONVERSION_LABEL });
+    }
+
+    // Trigger Google Conversion
+    if (CONVERSION_LABEL) {
+      <PageTracker conversionLabel={CONVERSION_LABEL} trackEventLabels={{
+        event: 'form_submission',
+        form_id: 'enquiry_form',
+        form_name: 'Enquiry Form'
+      }} />
+    }
+
+    const phoneWithoutPlus = phone.replace(/[\s+]/g, '');
 
     const formData = {
       Full_Name: (formCurrent['Name'] as HTMLInputElement)?.value || '',
       Company_Name: formCurrent['company']?.value || '',
       Business_Email:email,
-      Mobile_Number: phone,
+      Mobile_Number: phoneWithoutPlus,
       Product_Interested: formCurrent['product']?.value || '',
       Location: formCurrent['location']?.value || '',
       Message: formCurrent['queries']?.value || '',
+      Originate_From: 'Ace PPAP',
     };
 
     setLoading(true);
@@ -96,20 +129,20 @@ const Contact: React.FC = () => {
       setLoading(false);
     }
 
-    const phoneWithoutPlus = phone.replace(/^\+/, '');
  
     try {
       await sendWhatsappMessage(
-        'enquiry_ace_ppap',
-        {
+        "enquiry_form",
+          {
+          originateFrom: formData.Originate_From,
           fullName: formData.Full_Name,
           companyName: formData.Company_Name,
           businessEmail: formData.Business_Email,
-          mobileNumber: phoneWithoutPlus,
+          mobileNumber: formData.Mobile_Number,
           location: formData.Location,
+          productInterest: formData.Product_Interested,
           message: formData.Message,
         },
-        adminPhones,
       );
 
       await sendWhatsappMessage(
@@ -121,7 +154,7 @@ const Contact: React.FC = () => {
           imageUrl:
             'https://res.cloudinary.com/dohyevc59/image/upload/v1749124753/Enquiry_Greetings_royzcm.jpg',
         },
-        [phoneWithoutPlus],
+        phoneWithoutPlus,
       );
     } catch (error) {
       console.error('WhatsApp sending error:', error);

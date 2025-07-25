@@ -34,7 +34,8 @@
       "PSW": "PSW"
     },
     "Button": "Book a Demo",
-    "watchDemo": "Watch Demo"
+    "watchDemo": "Watch Demo",
+     "BookADemo": "Book A Free Demo Now!"
 
   },
 
@@ -241,7 +242,6 @@
         "Quote3": "The team demonstrated thorough expertise and guided us seamlessly through every stage of the PPAP requirements, ensuring compliance and accuracy."
   },
 
-
    "Contact": {
   "Title": "Get in touch and ",
   "highlight" : "schedule your demo now!",
@@ -278,5 +278,26 @@
 "Footer": {
   "Description": "Ace PPAP streamlines your PPAP process with centralized, up-to-date documents, built-in compliance, and improved team accountability helping you save time and get faster approvals.",
    "QuickLinks": { "Title": "Quick Links", "Features": "Features", "Clients": "Clients", "Pricing": "Pricing", "Contact": "Contact" }, 
-   "FollowUs": { "Title": "Follow Us" } }
+   "FollowUs": { "Title": "Follow Us" } },
+
+"Notification":{
+   "Demo": "Book a Demo",
+   "contact":"Contact Us",
+   "para":"Please fill out the form, and a qualified product expert will contact you shortly to understand your requirements and recommend the most suitable solution for your business.",
+   "write":"You can also write to us at:"
+},
+
+"CallbackCard":{
+  "Heading": "Need help finding what you need?",
+  "Subtitle": "Have questions or product needs? We’re happy to assist.",
+  "contact":"Contact Us",
+  "phone": "Phone",
+  "email": "Email",
+  "Title": "Most Popular Products",
+  "feature1": " Calibration Management System",
+  "feature2":"Customer Relationship Management",
+  "tagline1": "Boost Productivity with Reliable Calibration Management.",
+  "tagline2": "Know Your Customers. Build Trust. Grow Your Business.",
+  "LearnMore": "Learn more"
+}
 }

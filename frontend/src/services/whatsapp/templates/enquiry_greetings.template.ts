@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { TemplateMeta } from './templateRgistry';
+import { TemplateMeta } from '../types';
 
 const enquiryGreetingsSchema = z.object({
     fullName: z.string(),
@@ -8,9 +8,9 @@ const enquiryGreetingsSchema = z.object({
     imageUrl: z.string().url(), // image
 });
 
-type EnquiryGreetingsData = z.infer<typeof enquiryGreetingsSchema>;
+export type EnquiryGreetingsData = z.infer<typeof enquiryGreetingsSchema>;
 
-export const templateMeta: TemplateMeta<EnquiryGreetingsData> = {
+export const enquiryGreetingsTemplateMeta: TemplateMeta<EnquiryGreetingsData> = {
     templateId: 'customer_greetings',
     name: 'Enquiry Greetings',
     placeholders: [
